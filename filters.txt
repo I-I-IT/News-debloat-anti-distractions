@@ -1,0 +1,44 @@
+! Washington Post
+www.washingtonpost.com###react-aria4685572338-\:rc\: > li.wpds-c-kQXcnu-ieEAsZA-css.wpds-c-kQXcnu
+www.washingtonpost.com##div.PJLV-ipMxRz-css.PJLV:nth-of-type(1)
+www.washingtonpost.com##.PJLV-iexQdDD-css.PJLV
+www.washingtonpost.com##li.wpds-c-kQXcnu-ieEAsZA-css.wpds-c-kQXcnu
+www.washingtonpost.com##.wpds-c-iWKphc-ilXwBK-hasStickyRailHeight-true.wpds-c-iWKphc
+www.washingtonpost.com##.mb-md.db-ns.justify-center.flex > div
+
+!  Cook Political
+www.cookpolitical.com##[src="https://forms.zohopublic.com/cookpolitical/form/InBriefSignUpWebsite/formperma/-pgUyEdCoqOmQkQCRxSiQHCwkRxEpwYgwcMaSYyF5LE"]
+www.cookpolitical.com###-pgUyEdCoqOmQkQCRxSiQHCwkRxEpwYgwcMaSYyF5LE_353342
+
+! The Register
+www.theregister.com##.ticker_cta
+
+! Aljazeera
+www.aljazeera.com##.recommended
+www.aljazeera.com##.more-on
+
+
+! Foreign Policy
+foreignpolicy.com##div.hide-on-pages.sticky-container:nth-of-type(1)
+foreignpolicy.com##.top-ten-stories.trending-articles
+foreignpolicy.com##.sidebar-list
+foreignpolicy.com##.hide-on-gated-post.the-latest-container.sticky-container > div
+foreignpolicy.com##.hide-on-gated-post.trending-container.sticky-container
+foreignpolicy.com##.hide-on-gated-post.the-latest-container.sticky-container
+foreignpolicy.com##.sidebar
+foreignpolicy.com##.content-block
+foreignpolicy.com##.header-nav__main--alt.header-nav__main
+foreignpolicy.com##.related-articles--no-video.fp-related-wrapper
+
+! Gizmodo
+gizmodo.com##.max-w-sm.min-w-\[300px\].ml-auto.h-full.flex-col.flex
+gizmodo.com##.font-bold.text-2xl.mt-10
+gizmodo.com##.z-30.pl-\[18px\].border-l.lg\:block.hidden.w-1\/3.flex-none
+
+! Reuters
+www.reuters.com##.article__read-next__Kjxdw
+www.reuters.com##.regular-article-layout__related__kSJRx
+
+! NYT
+www.nytimes.com##.css-s2htvn
+www.nytimes.com##.css-ew4tgv
