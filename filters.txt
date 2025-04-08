@@ -99,20 +99,13 @@ washingtonpost.com##.post-most
 ! Removes "The Post Recommends"  on the washington post
 washingtonpost.com##.postrecommends
 
-! Removes video suggestions on video pages for desktop view
-youtube.com###related
-! Removes video suggestions on video pages for mobile view
-youtube.com##.ll
-youtube.com##.lub
-! Removes recommended channels on some channels page
-youtube.com##ytd-vertical-channel-section-renderer
-
+!! OPTIONAL, Including it cause no other AFAIK has this
 ! The following remove recommended content on instagram:
-instagram.com##div~article
-*instagram.com/explore*^$document
-*instagram.com/reels*^$document
+! instagram.com##div~article
+! *instagram.com/explore*^$document
+! *instagram.com/reels*^$document
 ! Removes suggested channels on instagram:
-instagram.com##div:has(>div>div>span:has-text(Suggested for you))
+!instagram.com##div:has(>div>div>span:has-text(Suggested for you))
 
 ! Removes 'recommended words' on cambridge dictionary
 dictionary.cambridge.org##div.lmb-25
@@ -126,5 +119,30 @@ www.xda-developers.com###secondary
 www.xda-developers.com##.article-widget-feed
 
 ! Removes article suggestions on infoworld
-www.infoworld.com###editorialfakesidebardiv
+www.ineditorialfakesidebardiv
+fakesidebardiv
 www.infoworld.com##.end-note
+! Apr 8, 2025 https://kyivindependent.com
+kyivindependent.com##.mostPopular
+kyivindependent.com##.editorsPicks
+kyivindependent.com##.editorsPicks__headWrap
+kyivindependent.com##.kg-bookmark-container
+
+! Apr 8, 2025 https://www.foxnews.com
+! FOX NEWS banner to go home might disappear on mobile. You can refresh or click on the article theme above the title. 
+ www.foxnews.com##.push-down.isSticky.recommended-videos
+ www.foxnews.com##.recommended-videos
+
+! Apr 8, 2025 https://edition.cnn.com
+edition.cnn.com##.video__one-tap-carousel
+
+! Apr 8, 2025 https://www.propublica.org
+www.propublica.org##.page-recirc__topics-band
+www.propublica.org##.hide-print.\|.most-read
+
+! Apr 8, 2025 https://www.economist.com
+www.economist.com##.ekf19570
+
+
+
+
