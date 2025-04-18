@@ -1,3 +1,8 @@
+! Title: News debloater 
+! Homepage: https://github.com/I-I-IT/News-sidebard-and-related-article-remover
+! Description: uBlock Origin filter removing news websites features to keep you reading, including "Trending Topics", "top stories", etc.
+
+
 ! Washington Post
 www.washingtonpost.com###react-aria4685572338-\:rc\: > li.wpds-c-kQXcnu-ieEAsZA-css.wpds-c-kQXcnu
 www.washingtonpost.com##div.PJLV-ipMxRz-css.PJLV:nth-of-type(1)
