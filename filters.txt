@@ -1,30 +1,28 @@
-! Title: News debloater 
-! Homepage: https://github.com/I-I-IT/News-sidebard-and-related-article-remover
-! Description: uBlock Origin filter removing news websites features to keep you reading, including "Trending Topics", "top stories", etc.
+
+! Dec 8, 2024 https://edition.cnn.com
+edition.cnn.com##.container_list-headlines-with-images__field-links.container__field-links
 
 
-! Washington Post
+! Nov 1, 2024 https://www.washingtonpost.com
 www.washingtonpost.com###react-aria4685572338-\:rc\: > li.wpds-c-kQXcnu-ieEAsZA-css.wpds-c-kQXcnu
 www.washingtonpost.com##div.PJLV-ipMxRz-css.PJLV:nth-of-type(1)
 www.washingtonpost.com##.PJLV-iexQdDD-css.PJLV
 www.washingtonpost.com##li.wpds-c-kQXcnu-ieEAsZA-css.wpds-c-kQXcnu
 www.washingtonpost.com##.wpds-c-iWKphc-ilXwBK-hasStickyRailHeight-true.wpds-c-iWKphc
 www.washingtonpost.com##.mb-md.db-ns.justify-center.flex > div
+www.washingtonpost.com##div[class="grid-body"]:style(max-width: 2000px;)
+!Try making larger displaying now that sidebar is gone
+! Apr 2 -Apr 7, 2025 https://www.washingtonpost.com
+www.washingtonpost.com##.article-footer
+! Related Articles
+www.washingtonpost.com##.subtype-magnet.type-custom_embed.article-body.wpds-c-PJLV
 
-!  Cook Political
-www.cookpolitical.com##[src="https://forms.zohopublic.com/cookpolitical/form/InBriefSignUpWebsite/formperma/-pgUyEdCoqOmQkQCRxSiQHCwkRxEpwYgwcMaSYyF5LE"]
-www.cookpolitical.com###-pgUyEdCoqOmQkQCRxSiQHCwkRxEpwYgwcMaSYyF5LE_353342
-
-! The Register
-www.theregister.com##.ticker_cta
-
-! Aljazeera
-www.aljazeera.com##.recommended
-! Jan 29, 2025 https://www.aljazeera.com
+! Jan 29 - Feb 20, 2025 https://www.aljazeera.com
 www.aljazeera.com##.more-on
+www.aljazeera.com##.recommended
 
 
-! Foreign Policy
+! Apr 1, 2025 https://foreignpolicy.com
 foreignpolicy.com##div.hide-on-pages.sticky-container:nth-of-type(1)
 foreignpolicy.com##.top-ten-stories.trending-articles
 foreignpolicy.com##.sidebar-list
@@ -36,40 +34,39 @@ foreignpolicy.com##.content-block
 foreignpolicy.com##.header-nav__main--alt.header-nav__main
 foreignpolicy.com##.related-articles--no-video.fp-related-wrapper
 
-! Gizmodo
+! Apr 1, 2025 https://gizmodo.com
 gizmodo.com##.max-w-sm.min-w-\[300px\].ml-auto.h-full.flex-col.flex
 gizmodo.com##.font-bold.text-2xl.mt-10
 gizmodo.com##.z-30.pl-\[18px\].border-l.lg\:block.hidden.w-1\/3.flex-none
 
 ! Apr 1 - Apr 10, 2025 https://www.reuters.com
+!www.reuters.com##div:matches-attr(class=article__read-next__./^[A-Za-z]{5}$/)
 www.reuters.com##div[class^="article__read-next__"]
 www.reuters.com##.read-next-panel
 www.reuters.com##div[class^="regular-article-layout__related__"]
 www.reuters.com##div[class^="single-column-article-layout__related__"]
 www.reuters.com##div[class^=regular-article-layout__right-rail__]
 
-! The Economist
+! Apr 1, 2025 https://www.economist.com
 www.economist.com##.ekf19570.css-mqgbir
 ||www.economist.com$image  
 ||www.economist.com/engassets/_next/static/chunks/pages/article$script,domain=www.economist.com
-www.economist.com##.ekf19570
 
-
-! Techcrunch
+! Apr 1, 2025 https://techcrunch.com
 ||jac.yahoosandbox.com/2.0.0/safeframe.html$subdocument
 techcrunch.com###comments_2988030 > .comments-widget
 ||techcrunch.com/_/_/_/_/?sidebar=a$xhr,1p
 
 
 
-! MSN
+! Apr 3, 2025 https://www.msn.com
 www.msn.com###ViewsPageId-AA1Ces5n > .consumption-page-feed-wrapper
 www.msn.com###div[class^="consumption-feed-content"]
 www.msn.com###cs-feed-layout
 www.msn.com##cs-personalized-feed
 www.msn.com##div[class="consumption-page-feed-wrapper"]
 
-!The Verge
+! Apr 6, 2025 https://www.theverge.com
 www.theverge.com##.n5bh2k5 > .mq7s702.duet--layout--header-pattern
 www.theverge.com##.n5bh2k5
 www.theverge.com##._1xql9yl1._1xql9yl0.duet--layout--rail
@@ -88,12 +85,8 @@ apnews.com##.Page-aside
 ||dims.apnews.com/dims4/default/*/*/strip/true/crop/*/resize/1440x960!/format/webp/quality/90/?url=*$image,1p
 ||https://api.parsely.com/v2/related?apikey=apnews.com&url=https://apnews.com/article/*
 
-! Apr 2 -Apr 7, 2025 https://www.washingtonpost.com
-www.washingtonpost.com##.article-footer
-! Related Articles
-www.washingtonpost.com##.subtype-magnet.type-custom_embed.article-body.wpds-c-PJLV
 
-!  Apr 1, 2025 - Apr 7, 2025 New York Times
+!  Apr 1, 2025 - Apr 7, 2025 https://www.nytimes.com
 !They seem to change the ids regularly
 www.nytimes.com###styln-guide
 www.nytimes.com##.css-1jmk4jh
@@ -102,13 +95,13 @@ www.nytimes.com##.css-ew4tgv
 
 
 
-! Apr 7, 2025 Wall Street Journal
+! Apr 7, 2025 https://www.wsj.com 
 www.wsj.com##.series-nav__inset-container 
 ! Related Articles
 www.wsj.com##div.e1ewmsuz12.css-j6808u:nth-of-type(3) 
 !More articles and videos, plus real estates insights
 
-! investing.com
+! Apr 8, 2025 https://www.investing.com
 www.investing.com##.justify-end.items-start
 ! Investing AI Pro promotion
 www.investing.com##.bg-gradient-pro-separator
@@ -128,23 +121,18 @@ www.cookpolitical.com##.block-views-block-article-blocks-featured-article
 ! Apr 10, 2025 https://www.latimes.com
 www.latimes.com##.list-spacer-bottom
 
-
-! Dec 8, 2024 https://edition.cnn.com
-edition.cnn.com##.container_list-headlines-with-images__field-links.container__field-links
-edition.cnn.com##.video__one-tap-carousel
-
-
 ! Apr 15, 2025 https://www.washingtonpost.com
 www.washingtonpost.com##.grid-rail
 
 ! Apr 17, 2025 https://www.voanews.com
 www.voanews.com###ymla-section
 www.voanews.com##.media-block-wrap
-!WIP to use the now-liberated screen place to better display the article. Currently not working
 www.voanews.com##div[class="col-xs-12 col-sm-12 col-md-8 col-lg-8 pull-left bottom-offset content-offset"]:style(width: auto;)
+www.voanews.com##h1:style(background-color: blue !important)
 www.voanews.com##.content-offset.bottom-offset.pull-left.col-lg-8.col-md-8.col-sm-12.col-xs-12:style(width:90%)
 www.voanews.com##.col-md-8:style(width: 95%)
 www.voanews.com##.col-md-3:style(width:1%;)
+www.voanews.com##.col-md-8:style(background-color: yellow)
 
 ! Apr 18, 2025 https://www.poynter.org
 www.poynter.org##.poynter-post-content > ul
@@ -158,97 +146,157 @@ www.politifact.com##.o-pick
 www.politifact.com##.o-stagebox
 www.politifact.com##li.o-listicle__item
 
-! The Kyiv Indepedent (https://kyivindependent.com)
-kyivindependent.com##.mostPopular
-kyivindependent.com##.editorsPicks
-kyivindependent.com##.editorsPicks__headWrap
-kyivindependent.com##.kg-bookmark-container
+! Apr 18, 2025 https://www.propublica.org
+www.propublica.org##.hide-print.\|.wide-sm.left.wrap.out03.size03.promo-series
+www.propublica.org##.hide-print.\|.wide-md.left.wrap.out02.size02.topics-list
+www.propublica.org##div[class="center article"]:style(width: calc(((((100%) / 14) * 8) + 14rem)*1/1);)
+!Make displaying bigger, original formula has - 14 in first parenthesis
 
-! Fox News (https://www.foxnews.com)
-! FOX NEWS banner to go home might disappear on mobile. You can refresh or click on the article theme above the title. 
- www.foxnews.com##.push-down.isSticky.recommended-videos
- www.foxnews.com##.recommended-videos
+! Apr 18, 2025 https://www.economist.com
+www.economist.com##.ei4jjge0.css-ra48xw
+
+! Apr 18, 2025 https://townhall.com
+townhall.com##.order-5.order-md-5.border-start.col-md-4
+townhall.com##.mb-3.row > div.col
+townhall.com##.d-print-none.post-after
+townhall.com##.thm-headroom--pinned.thm-headroom.tns-outer
+
+! Apr 18, 2025 https://www.france24.com
+www.france24.com##.t-content__below-sidebar.o-aside-content--top-articles.o-aside-content
+www.france24.com##.t-content__below-sidebar.o-aside-content--carousel.o-aside-content
+www.france24.com##.o-sidebar__aside
 
 
-! ProPublica (https://www.propublica.org)
-www.propublica.org##.page-recirc__topics-band
-www.propublica.org##.hide-print.\|.most-read
+
+
+! Apr 18, 2025 https://www.cbc.ca
+www.cbc.ca##.sclt-morenews.moreStories
+www.cbc.ca##.relatedlinks
+www.cbc.ca##div.detailBodyContainer:nth-of-type(2)
+www.cbc.ca##.trendingList-sidebar
+www.cbc.ca##.similarListItem:has(a[class^="similarLink"])
+
+! Apr 18, 2025 https://www.ft.com
+www.ft.com##.o-grid-container.onward-journey__content
+
+! Apr 18, 2025 https://eu.usatoday.com
+usatoday.com##div.poster-scroll
+usatoday.com##promo-up-next
+usatoday.com##.secondary > .content-well
+usatoday.com##.secondary
+
+! Apr 18, 2025 https://timesofindia.indiatimes.com
+timesofindia.indiatimes.com##.sidebar_ad_fix
+timesofindia.indiatimes.com###desktop_minitv_view
+timesofindia.indiatimes.com##.trending_sliderContent
+timesofindia.indiatimes.com##.xciRh
+timesofindia.indiatimes.com##.visualstoriesas_wrapper
+timesofindia.indiatimes.com##.photosslider
+timesofindia.indiatimes.com##div[class$="articletrendinglistwrapper"]
+timesofindia.indiatimes.com##.D1qO1 > .undefined.euvAX
+timesofindia.indiatimes.com##.db91T
+timesofindia.indiatimes.com##.contentwrapper > .undefined.euvAX
+||jarvis.indiatimes.com/v1/feeds/revenue/minitv_filter$xhr,domain=timesofindia.indiatimes.com
+||timesofindia.indiatimes.com/feed_articleshow_rhs_video_widget.cms$xhr,domain=timesofindia.indiatimes.com
+!#This is related videos
+||timesofindia.indiatimes.com/feed_articleshow_rhs_video_widget.cms$xhr,domain=timesofindia.indiatimes.com
+||timesofindia.indiatimes.com/feed_articleshow_rhs_video_widget.cms$xhr,domain=timesofindia.indiatimes.com
+||timesofindia.indiatimes.com/mobile_xml_feed_news_list.cms$xhr,domain=timesofindia.indiatimes.com
+||toibnews.timesofindia.indiatimes.com/Election/election2017_breakingnews.htm$xhr,domain=timesofindia.indiatimes.com
+!Old and epmty 2017election file, blocking for secutity
+||timesofindia.indiatimes.com/forecast_weathertoday_ext.cms$xhr,domain=timesofindia.indiatimes.com
+!No neeed for those weather things
+||toifeeds.indiatimes.com/treact/feeds/toi/web/show/news$xhr,domain=timesofindia.indiatimes.com
+!This seems to be the way they are loading additional articles from the actual one
+||timesofindia.indiatimes.com/feed_articleshow_rhs_video.cms$xhr,domain=timesofindia.indiatimes.com
+!those are related and viral section
+timesofindia.indiatimes.com##.b1Czn
+timesofindia.indiatimes.com###toi-article-container-120303657 > .UzraQ
+timesofindia.indiatimes.com###toi-article-container-120303657
+timesofindia.indiatimes.com###toi-article-container-120412641 > .UzraQ
+timesofindia.indiatimes.com##div[class="perpetual"]
+timesofindia.indiatimes.com##div[id^="next-story"]
+
+! Apr 19, 2025 https://www.euronews.com
+www.euronews.com##.swiper-slide-active.swiper-slide.u-transform-none.jsArticleFirst > .o-article-newsy > .o-article-newsy__aside
+www.euronews.com##.swiper-slide-active.swiper-slide.u-transform-none.jsArticleFirst > .o-article-newsy > .o-article-newsy__main > .u-article-grid.u-article-content.o-article-newsy__main__body > .c-article-you-might-also-like.perf-cv-auto
+www.euronews.com##.c-tags-list--grey-rendering
+www.euronews.com##.c-footer-search__tag-title
+www.euronews.com##.js-breaking-news.helper-site-row.c-breaking-news
+
+! Apr 19, 2025 https://www.newsweek.com
+www.newsweek.com##aside
+www.newsweek.com##.disco-widget
+www.newsweek.com##.top-stories
+www.newsweek.com##.read-more-topics
+www.newsweek.com##.footer-trending.grid-col-span
+||video.newsweek.com$1p,redirect=click2load.html,domain=~newsweek.com
+www.newsweek.com##.active.breaking-bar
+www.newsweek.com###breakingnews-placeholder
 
 
 
-!BELOW IS NOT MINE, sourced from https://github.com/KCaglarCoskun/enur-filter-list/blob/master/enur-filter-list.txt
+! Apr 19, 2025 https://www.criticalthreats.org
+www.criticalthreats.org##.notifications.sidebar-item
+www.criticalthreats.org##.ng-scope.reading-list-item
+www.criticalthreats.org###reading-list-title
+www.criticalthreats.org##.active.reading-list-item
 
-! Removes side column  on bbc
-bbc.com##.column--secondary
-bbc.co.uk##.column--secondary
-! Removes tag grouped list on bbc
-bbc.com##.container-more-from-this-index
-bbc.co.uk##.container-more-from-this-index
+www.ghacks.net##div[class^="evergreen-posts"]
+!(/^[1-2][0-9][0-9][0-9])
 
-! Removes "news & buzz"  on cnn
-cnn.com##.ob_container
-! Removes "More from CNN"  on cnn
-cnn.com##.ob-last
-cnn.com##.zn-story-bottom-second
+! Apr 19, 2025 https://www.ghacks.net
+www.ghacks.net##.ghacks-content > div:has-text(/ Previous Post/)
+www.ghacks.net##.mt--30.mb--20.heading--small:has-text(/Tutorials & Tips/)
 
-! Removes "Trending"  on huffington post
-huffingtonpost.com##.bn-trending
-huffingtonpost.com##.yn-trending
-! Removes "You May Like"  on huffington post
-huffingtonpost.com##.below-entry
-! Removes "Buttom Most Shared"  on huffington post
-huffingtonpost.com##.js-bottom-most-shared
-! Removes "What's Hot"  on huffington post
-huffingtonpost.com##.buttom-trending
 
-! Removes "Just In"  on indiatimes
-indiatimes.com##.just-in
+! Apr 19, 2025 https://www.timesofisrael.com
+www.timesofisrael.com###most
+www.timesofisrael.com##.more-from-liveblog-entries
 
-! Removes "Trending" list on nytimes
-nytimes.com##.trending-module
-! Removes "Recommended For You", "More in .." and author lists on nytimes
-nytimes.com###whats-next
-! Removes the news ribbon on nytimes
-nytimes.com##.news-collection
+! Apr 19, 2025 https://kyivindependent.com
+kyivindependent.com##.isPost.home__feedLayout
 
-! Removes "Hot Network Topics"
-stackexchange.com###hot-network-questions
-stackoverflow.com###hot-network-questions
-superuser.com###hot-network-questions
-serverfault.com###hot-network-questions
-askubuntu.com###hot-network-questions
-stackapps.com###hot-network-questions
-mathoverflow.net###hot-network-questions
+! Apr 21, 2025 https://www.wired.com
+www.wired.com##.hide-read-more-ad
+www.wired.com##.KhyPp.SummaryCollectionGridSectionTitle-fCmYwG.fiHEJl.SectionTitleRoot-dBGvdq
+!wired.com##div[class^="ContentFooterWrapper"]:nth-of-type(1)
+www.wired.com##div.HEhan.iUEiRd.RowWrapper-UmqTg.BaseWrap-sc-gjQpdd:nth-of-type(1) > .wide-adrail.narrow.grid-layout--adrail.grid-items-2.grid-margins.grid.sjrqk.GridWrapper-cAzTTK
 
-! Removes "Most popular"  on the guardian
-theguardian.com##.right-most-popular
-! Removes "Most viewed"  on the guardian
-theguardian.com##.fc-container
 
-! Removes "Most Read ..."  on the washington post
-washingtonpost.com##.post-most
-! Removes "The Post Recommends"  on the washington post
-washingtonpost.com##.postrecommends
 
-!! OPTIONAL, Including it cause no other AFAIK has this
-! The following remove recommended content on instagram:
-! instagram.com##div~article
-! *instagram.com/explore*^$document
-! *instagram.com/reels*^$document
-! Removes suggested channels on instagram:
-!instagram.com##div:has(>div>div>span:has-text(Suggested for you))
+! Apr 21, 2025 https://www.bloomberg.com
+www.bloomberg.com##.ContextualNav_slider__KvlEO.media-ui-Slider_isAtStart-n0WJnmO946M-
 
-! Removes 'recommended words' on cambridge dictionary
-dictionary.cambridge.org##div.lmb-25
+! NateSilver
+www.natesilver.net##h5:has-text(/See also:/)
 
-! Removes "trending" and "recommended" on github
-github.com##.js-feed-item-view:has-text("Trending repositories")
-github.com##.js-feed-item-view:has-text("Recommended for you")
+!The Register
+www.theregister.com##.ticker_cta
+www.theregister.com##.similar_topics
 
-! Removes recommended articles on xda-developers
-www.xda-developers.com###secondary
-www.xda-developers.com##.article-widget-feed
-! Removes article suggestions on infoworld
-www.ineditorialfakesidebardiv
-fakesidebardiv
-www.infoworld.com##.end-note
+
+
+! Apr 22, 2025 HuggingFace Blog
+huggingface.co##p:nth-of-type(7):has-text(/click to follow/)
+huggingface.co##p:has-text(/to your inbox, please subscribe here/)
+
+
+! Apr 23, 2025 https://theonion.com
+theonion.com##section[class^="wp-block-group is-layout-flow wp-block-group-is-layout-flow"]:has-text(/Read More/)
+theonion.com##div[class="wp-block-cb-carousel slick-initialized slick-slider slick-dotted"]:has(div[class="slick-list draggable"])
+theonion.com##strong:has-text(/Get The Onion Newsletter/)
+theonion.com##div[class^="wp-block-group pat-newsletter-onpage pat-newsletter-onpag"]
+theonion.com##.wp-block-group-is-layout-flow.is-layout-flow.single-post-related-content.wp-block-group:has-text(/Related Coverage/)
+theonion.com##.wp-block-group-is-layout-flow.is-layout-flow.single-post-next-story.wp-block-group:has-text(/Continued/)
+theonion.com##div[class^="wp-block-group single-post-rail__post-list is-layout-flow wp-block-group-is-layout-flow block-visibility-hide-small-screen"]
+theonion.com##div[class^="has-full-height wp-block-template-part"]:has-text(/Recent News/)
+theonion.com##div[class^="wp-block-template-part"]:has(section)
+theonion.com##p[class^="has-primary-1-color has-text-color has-link-color has-tablet-gothic-semi-condensed-font-family"]:has-text(/Explore More Videos/)
+
+! Apr 23, 2025 https://bsky.app
+||cordyceps.us-west.host.bsky.network/xrpc/app.bsky.unspecced.getTrendingTopics$xhr,domain=bsky.app
+||cordyceps.us-west.host.bsky.network/xrpc/app.bsky.graph.getSuggestedFollowsByActor$xhr,domain=bsky.app
+!Block suggested follows and suggested topics on network level
+! Apr 18, 2025 https://bsky.app
+bsky.app##.r-14lw9ot.css-175oi2r > div.css-175oi2r > div.css-175oi2r:has-text(/Trending/)
