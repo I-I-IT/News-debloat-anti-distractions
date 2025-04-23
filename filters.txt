@@ -1,9 +1,13 @@
+! Title: News debloater 
+! Homepage: https://github.com/I-I-IT/News-sidebard-and-related-article-remover
+! Description: Free you from recommendation-grabbing traps. uBlock Origin filter removing news websites features to keep you reading, including "Trending Topics", "top stories", etc.
 
 ! Dec 8, 2024 https://edition.cnn.com
 edition.cnn.com##.container_list-headlines-with-images__field-links.container__field-links
+edition.cnn.com##.container_list-headlines-with-images__field-links.container__field-links
+edition.cnn.com##.video__one-tap-carousel
 
-
-! Nov 1, 2024 https://www.washingtonpost.com
+! Washington Post
 www.washingtonpost.com###react-aria4685572338-\:rc\: > li.wpds-c-kQXcnu-ieEAsZA-css.wpds-c-kQXcnu
 www.washingtonpost.com##div.PJLV-ipMxRz-css.PJLV:nth-of-type(1)
 www.washingtonpost.com##.PJLV-iexQdDD-css.PJLV
@@ -16,13 +20,18 @@ www.washingtonpost.com##div[class="grid-body"]:style(max-width: 2000px;)
 www.washingtonpost.com##.article-footer
 ! Related Articles
 www.washingtonpost.com##.subtype-magnet.type-custom_embed.article-body.wpds-c-PJLV
+! Removes "Most Read ..."  on the washington post
+washingtonpost.com##.post-most
+! Removes "The Post Recommends"  on the washington post
+washingtonpost.com##.postrecommends
+www.washingtonpost.com##.grid-rail
 
 ! Jan 29 - Feb 20, 2025 https://www.aljazeera.com
 www.aljazeera.com##.more-on
 www.aljazeera.com##.recommended
 
 
-! Apr 1, 2025 https://foreignpolicy.com
+! Foreign Policy
 foreignpolicy.com##div.hide-on-pages.sticky-container:nth-of-type(1)
 foreignpolicy.com##.top-ten-stories.trending-articles
 foreignpolicy.com##.sidebar-list
@@ -34,7 +43,7 @@ foreignpolicy.com##.content-block
 foreignpolicy.com##.header-nav__main--alt.header-nav__main
 foreignpolicy.com##.related-articles--no-video.fp-related-wrapper
 
-! Apr 1, 2025 https://gizmodo.com
+! Gizmodo
 gizmodo.com##.max-w-sm.min-w-\[300px\].ml-auto.h-full.flex-col.flex
 gizmodo.com##.font-bold.text-2xl.mt-10
 gizmodo.com##.z-30.pl-\[18px\].border-l.lg\:block.hidden.w-1\/3.flex-none
@@ -47,26 +56,29 @@ www.reuters.com##div[class^="regular-article-layout__related__"]
 www.reuters.com##div[class^="single-column-article-layout__related__"]
 www.reuters.com##div[class^=regular-article-layout__right-rail__]
 
-! Apr 1, 2025 https://www.economist.com
+! The Economist
 www.economist.com##.ekf19570.css-mqgbir
-||www.economist.com$image  
+!||www.economist.com$image  
 ||www.economist.com/engassets/_next/static/chunks/pages/article$script,domain=www.economist.com
+www.economist.com##.ei4jjge0.css-ra48xw
 
-! Apr 1, 2025 https://techcrunch.com
+
+! Techcrunch
 ||jac.yahoosandbox.com/2.0.0/safeframe.html$subdocument
 techcrunch.com###comments_2988030 > .comments-widget
 ||techcrunch.com/_/_/_/_/?sidebar=a$xhr,1p
+techcrunch.com##.has-error.wp-block-techcrunch-seamless-scroll.seamless-scroll
 
 
 
-! Apr 3, 2025 https://www.msn.com
+! MSN
 www.msn.com###ViewsPageId-AA1Ces5n > .consumption-page-feed-wrapper
 www.msn.com###div[class^="consumption-feed-content"]
 www.msn.com###cs-feed-layout
 www.msn.com##cs-personalized-feed
 www.msn.com##div[class="consumption-page-feed-wrapper"]
 
-! Apr 6, 2025 https://www.theverge.com
+!The Verge
 www.theverge.com##.n5bh2k5 > .mq7s702.duet--layout--header-pattern
 www.theverge.com##.n5bh2k5
 www.theverge.com##._1xql9yl1._1xql9yl0.duet--layout--rail
@@ -74,9 +86,6 @@ www.theverge.com##._1vx82920
 www.theverge.com##._1vx82923
 www.theverge.com##.n5bh2k0.duet--layout--article-recirc-color-container
 www.theverge.com##._8syhok0._1ymtmqpz.duet--layout--header-pattern > .mq7s704
-
-! Apr 7, 2025 https://techcrunch.com
-techcrunch.com##.has-error.wp-block-techcrunch-seamless-scroll.seamless-scroll
 
 ! Apr 7, 2025 https://apnews.com
 apnews.com##.PageListRightRailA
@@ -86,7 +95,7 @@ apnews.com##.Page-aside
 ||https://api.parsely.com/v2/related?apikey=apnews.com&url=https://apnews.com/article/*
 
 
-!  Apr 1, 2025 - Apr 7, 2025 https://www.nytimes.com
+!  Apr 1, 2025 - Apr 7, 2025 New York Times
 !They seem to change the ids regularly
 www.nytimes.com###styln-guide
 www.nytimes.com##.css-1jmk4jh
@@ -95,7 +104,7 @@ www.nytimes.com##.css-ew4tgv
 
 
 
-! Apr 7, 2025 https://www.wsj.com 
+! Apr 7, 2025 Wall Street Journal
 www.wsj.com##.series-nav__inset-container 
 ! Related Articles
 www.wsj.com##div.e1ewmsuz12.css-j6808u:nth-of-type(3) 
@@ -111,18 +120,19 @@ www.investing.com##.article-toolbar-view_sticky-toolbar__3GN48.border-b-\[\#E6E9
 www.investing.com##.md\:border-r.md\:w-\[410px\]
 www.investing.com##.text-\[\#181C21\].p-3\.25
 
-! Apr 8, 2025 https://www.cookpolitical.com
+!  Cook Political
 www.cookpolitical.com##.block-views-block-article-blocks-more-from-cook-political-report
 www.cookpolitical.com##.block-views-block-article-blocks-featured-article
-! Dec 2, 2024 https://www.cookpolitical.com
+
 !www.cookpolitical.com###-pgUyEdCoqOmQkQCRxSiQHCwkRxEpwYgwcMaSYyF5LE_353342
-!Potentially useless/out-of-date
+!Potentially useless/out-of-date (Dec 2, 2024)
+www.cookpolitical.com##[src="https://forms.zohopublic.com/cookpolitical/form/InBriefSignUpWebsite/formperma/-pgUyEdCoqOmQkQCRxSiQHCwkRxEpwYgwcMaSYyF5LE"]
+www.cookpolitical.com###-pgUyEdCoqOmQkQCRxSiQHCwkRxEpwYgwcMaSYyF5LE_353342
 
 ! Apr 10, 2025 https://www.latimes.com
 www.latimes.com##.list-spacer-bottom
 
-! Apr 15, 2025 https://www.washingtonpost.com
-www.washingtonpost.com##.grid-rail
+
 
 ! Apr 17, 2025 https://www.voanews.com
 www.voanews.com###ymla-section
@@ -146,14 +156,15 @@ www.politifact.com##.o-pick
 www.politifact.com##.o-stagebox
 www.politifact.com##li.o-listicle__item
 
-! Apr 18, 2025 https://www.propublica.org
+! ProPublica (https://www.propublica.org)
 www.propublica.org##.hide-print.\|.wide-sm.left.wrap.out03.size03.promo-series
 www.propublica.org##.hide-print.\|.wide-md.left.wrap.out02.size02.topics-list
 www.propublica.org##div[class="center article"]:style(width: calc(((((100%) / 14) * 8) + 14rem)*1/1);)
 !Make displaying bigger, original formula has - 14 in first parenthesis
+www.propublica.org##.page-recirc__topics-band
+www.propublica.org##.hide-print.\|.most-read
 
-! Apr 18, 2025 https://www.economist.com
-www.economist.com##.ei4jjge0.css-ra48xw
+
 
 ! Apr 18, 2025 https://townhall.com
 townhall.com##.order-5.order-md-5.border-start.col-md-4
@@ -234,17 +245,16 @@ www.newsweek.com##.footer-trending.grid-col-span
 www.newsweek.com##.active.breaking-bar
 www.newsweek.com###breakingnews-placeholder
 
+! Fox News (https://www.foxnews.com)
+! FOX NEWS banner to go home might disappear on mobile. You can refresh or click on the article theme above the title. 
+ www.foxnews.com##.push-down.isSticky.recommended-videos
+ www.foxnews.com##.recommended-videos
 
 
-! Apr 19, 2025 https://www.criticalthreats.org
-www.criticalthreats.org##.notifications.sidebar-item
-www.criticalthreats.org##.ng-scope.reading-list-item
-www.criticalthreats.org###reading-list-title
-www.criticalthreats.org##.active.reading-list-item
 
+!Ghacks
 www.ghacks.net##div[class^="evergreen-posts"]
 !(/^[1-2][0-9][0-9][0-9])
-
 ! Apr 19, 2025 https://www.ghacks.net
 www.ghacks.net##.ghacks-content > div:has-text(/ Previous Post/)
 www.ghacks.net##.mt--30.mb--20.heading--small:has-text(/Tutorials & Tips/)
@@ -254,8 +264,12 @@ www.ghacks.net##.mt--30.mb--20.heading--small:has-text(/Tutorials & Tips/)
 www.timesofisrael.com###most
 www.timesofisrael.com##.more-from-liveblog-entries
 
-! Apr 19, 2025 https://kyivindependent.com
+! The Kyiv Indepedent (https://kyivindependent.com)
 kyivindependent.com##.isPost.home__feedLayout
+kyivindependent.com##.mostPopular
+kyivindependent.com##.editorsPicks
+kyivindependent.com##.editorsPicks__headWrap
+kyivindependent.com##.kg-bookmark-container
 
 ! Apr 21, 2025 https://www.wired.com
 www.wired.com##.hide-read-more-ad
@@ -294,9 +308,86 @@ theonion.com##div[class^="has-full-height wp-block-template-part"]:has-text(/Rec
 theonion.com##div[class^="wp-block-template-part"]:has(section)
 theonion.com##p[class^="has-primary-1-color has-text-color has-link-color has-tablet-gothic-semi-condensed-font-family"]:has-text(/Explore More Videos/)
 
+!Bluesky filters for trends and sugestions (otpional)
 ! Apr 23, 2025 https://bsky.app
-||cordyceps.us-west.host.bsky.network/xrpc/app.bsky.unspecced.getTrendingTopics$xhr,domain=bsky.app
-||cordyceps.us-west.host.bsky.network/xrpc/app.bsky.graph.getSuggestedFollowsByActor$xhr,domain=bsky.app
+!||cordyceps.us-west.host.bsky.network/xrpc/app.bsky.unspecced.getTrendingTopics$xhr,domain=bsky.app
+!||cordyceps.us-west.host.bsky.network/xrpc/app.bsky.graph.getSuggestedFollowsByActor$xhr,domain=bsky.app
 !Block suggested follows and suggested topics on network level
 ! Apr 18, 2025 https://bsky.app
-bsky.app##.r-14lw9ot.css-175oi2r > div.css-175oi2r > div.css-175oi2r:has-text(/Trending/)
+!bsky.app##.r-14lw9ot.css-175oi2r > div.css-175oi2r > div.css-175oi2r:has-text(/Trending/)
+
+
+
+!BELOW IS NOT MINE, sourced from https://github.com/KCaglarCoskun/enur-filter-list/blob/master/enur-filter-list.txt
+
+! Removes side column  on bbc
+bbc.com##.column--secondary
+bbc.co.uk##.column--secondary
+! Removes tag grouped list on bbc
+bbc.com##.container-more-from-this-index
+bbc.co.uk##.container-more-from-this-index
+
+! Removes "news & buzz"  on cnn
+cnn.com##.ob_container
+! Removes "More from CNN"  on cnn
+cnn.com##.ob-last
+cnn.com##.zn-story-bottom-second
+
+
+! Removes "Trending"  on huffington post
+huffingtonpost.com##.bn-trending
+huffingtonpost.com##.yn-trending
+! Removes "You May Like"  on huffington post
+huffingtonpost.com##.below-entry
+! Removes "Buttom Most Shared"  on huffington post
+huffingtonpost.com##.js-bottom-most-shared
+! Removes "What's Hot"  on huffington post
+huffingtonpost.com##.buttom-trending
+
+! Removes "Just In"  on indiatimes
+indiatimes.com##.just-in
+
+! Removes "Trending" list on nytimes
+nytimes.com##.trending-module
+! Removes "Recommended For You", "More in .." and author lists on nytimes
+nytimes.com###whats-next
+! Removes the news ribbon on nytimes
+nytimes.com##.news-collection
+
+! Removes "Hot Network Topics"
+stackexchange.com###hot-network-questions
+stackoverflow.com###hot-network-questions
+superuser.com###hot-network-questions
+serverfault.com###hot-network-questions
+askubuntu.com###hot-network-questions
+stackapps.com###hot-network-questions
+mathoverflow.net###hot-network-questions
+
+! Removes "Most popular"  on the guardian
+theguardian.com##.right-most-popular
+! Removes "Most viewed"  on the guardian
+theguardian.com##.fc-container
+
+
+!! OPTIONAL, Including it cause no other AFAIK has this
+! The following remove recommended content on instagram:
+! instagram.com##div~article
+! *instagram.com/explore*^$document
+! *instagram.com/reels*^$document
+! Removes suggested channels on instagram:
+!instagram.com##div:has(>div>div>span:has-text(Suggested for you))
+
+! Removes 'recommended words' on cambridge dictionary
+dictionary.cambridge.org##div.lmb-25
+
+! Removes "trending" and "recommended" on github
+github.com##.js-feed-item-view:has-text("Trending repositories")
+github.com##.js-feed-item-view:has-text("Recommended for you")
+
+! Removes recommended articles on xda-developers
+www.xda-developers.com###secondary
+www.xda-developers.com##.article-widget-feed
+! Removes article suggestions on infoworld
+www.ineditorialfakesidebardiv
+fakesidebardiv
+www.infoworld.com##.end-note
