@@ -42,4 +42,6 @@ In some cases, the div will not have an useful class name, but it will have anot
 Firefox's reading mode doesn't remove recommendations, although it often makes them ugly. You can still use it on top of the filters to have a more minimalist experience.
 
 
+### Example
+This represents the more subtle changes as I already have almost a dozen distraction blocklists. See https://github.com/collinbarrett/FilterLists/pull/4806#issue-3036720546
 
