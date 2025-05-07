@@ -37,11 +37,13 @@ has-text() is useful for sites that will insert divs or title (h2, h3, h4) for r
 
 In some cases, the div will not have an useful class name, but it will have another property with an useful name. For example it might be div class="euu472" data-parsely="recommendations-sidebar". In this case use class[data-parsely="recommendations-sidebar"]. You might also want to add :has-text() after, just to be sure it is actually a recommendations. If it's ambiguous, always use has-text to make sure you aren't hiding normal content.
 
+Also, the upward(div/section/...) method is useful to select the upward element, especially on sites with few or no descriptives class.
+
 ### Why not just use Firefox's Reading Mode ?
 
 Firefox's reading mode doesn't remove recommendations, although it often makes them ugly. You can still use it on top of the filters to have a more minimalist experience.
 
-
 ### Example
+
 This represents the more subtle changes as I already have almost a dozen distraction blocklists. See https://github.com/collinbarrett/FilterLists/pull/4806#issue-3036720546
 
