@@ -1,6 +1,5 @@
-
 ! Dec 8, 2024 https://edition.cnn.com
-edition.cnn.com##.container_list-headlines-with-images__field-links.container__field-links
+!edition.cnn.com##.container_list-headlines-with-images__field-links.container__field-links
 
 
 ! Nov 1, 2024 https://www.washingtonpost.com
@@ -421,3 +420,55 @@ thedispatch.com##h2:has-text(/More on/) + article
 ! May 2, 2025 https://thedispatch.com
 thedispatch.com###article-related-posts
 thedispatch.com##section[class="small-my content-small inline-article custom-block left-aligned-image"]:has(h4):has(a)
+
+! May 2, 2025 https://adfontesmedia.com
+||adfontesmedia.com/wp-content/uploads/2022/07/background-footer-blue.png$image
+adfontesmedia.com##.elementor-sticky.elementor-section-height-default.elementor-section-boxed.elementor-section-content-middle.elementor-element-7294d0f3.elementor-element.elementor-top-section.elementor-section
+adfontesmedia.com##.elementor-sticky.elementor-section-height-default.elementor-section-boxed.elementor-section-content-middle.elementor-element-7ff6bd4d.elementor-element.elementor-top-section.elementor-section
+
+! May 2, 2025 https://punchbowl.news
+punchbowl.news##.related-articles
+
+! May 2, 2025 https://github.com
+github.com##.mt-4.flash:has-text(/Only you can see your full profile/)
+
+! May 2, 2025 https://arstechnica.com
+arstechnica.com##div:has(div[class="post-navigation"])+div:has-text(/Most Read/)
+
+! May 2, 2025 https://kyivindependent.com
+kyivindependent.com##.kg-bookmark-card:has(a)
+kyivindependent.com##.editorsPicks
+kyivindependent.com##.editorsPicks__headWrap
+kyivindependent.com##.isArticlePage.mostPopular__wrapper
+kyivindependent.com##.mostPopular
+
+! May 4, 2025 https://appleinsider.com
+appleinsider.com##.main-page.row > .col-lg-3:has(div[class="sbr-spotlight"]):has-text(/Top Stories/)
+appleinsider.com##div[aria-label="Latest News"]:has-text(/Latest News/)
+
+! May 5, 2025 https://www.ndtv.com
+www.ndtv.com##.s-lf-wid:has-text(/Related News/):has(h3[class="s-ttl-clr"])
+www.ndtv.com##div[id~="matchPhase"]>.mini_score
+www.ndtv.com##.sp_lnk2 > strong:has-text(/Also Read|/)
+www.ndtv.com/world-news##div.--simple.--left.--hard.stf__item.bb-custom-side > [href^="https://sports.ndtv.com/cricket/srh-vs-dc-scorecard-live-cricket-score-ipl-2025-match-55-shdd05052025257269"]
+www.ndtv.com##.--landscape.stf__wrapper
+www.ndtv.com##.mini_cbe-cnt:has-text(/Match/)
+
+! May 5, 2025 https://9to5mac.com
+9to5mac.com/20__##article:not([id="opened"])
+!This prevents infinite scrolling- will not work if article doesn't have the format yyyy/... (necessary because if not homepage breaks)
+
+! May 5, 2025 https://www.newyorker.com
+www.newyorker.com##div[data-testid="ContentFooterBottom"]:has-text(/Read More/):has(header)
+www.newyorker.com##h2[class~="BaseWrap"]:has-text(/New Yorker Favorites/):upward(div)
+www.newyorker.com##h2[class~="BaseWrap"]:has-text(/New Yorker Favorites/):upward(div) + div
+
+! May 5, 2025 https://otenews.com
+otenews.com##.inside-right-sidebar
+otenews.com##div.Teckshop-related-posts
+
+! May 6, 2025 https://www.zdf.de
+www.zdf.de##h2[id=":S2:"]:has-text(/Mehr aus ZDFheute live/):upward(div):upward(section)
+
+! May 6, 2025 https://foreignpolicy.com
+foreignpolicy.com###browser-compatibility-error
