@@ -32,7 +32,9 @@ I might also
 
 I generally do, although if it's very discreet and non-intrusive I might let it.
 
-### How to create filters yourself?
+### How to create filters yourself ?
+
+If you prefer video, [click here](https://www.youtube.com/watch?v=Qzb1j-L1n7o)
 
 I personally started by using the uBlock element picker, but this has several drawbacks. Nowadays, sites often name their div class name not only by their function, but they add an unique id. So instead of div class="recommendations-sidebar" we get div class="recommendations-sidebar 73vryf4". This means that if you use the Picker, the site can just change this id per article or every day, and your picker becomes useless. The other drawbacks of the picker is that if the site doesn't have a class name for an element, it will just see that this the div number 5 (nth-of-type 5) and block that element. That mean at best your filter will not work on a shorter article, but at worst it will break the site on a longer article.
 
@@ -50,4 +52,4 @@ Firefox's reading mode doesn't remove recommendations, although it often makes t
 
 ### Example
 
-This represents the more subtle changes as I already have almost a dozen distraction blocklists. See https://github.com/collinbarrett/FilterLists/pull/4806#issue-3036720546
+This represents the more subtle changes as I already have almost a dozen distraction blocklists. See [https://github.com/collinbarrett/FilterLists/pull/4806#issue-3036720546](https://github.com/collinbarrett/FilterLists/pull/4806#issue-3036720546)
