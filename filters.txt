@@ -1,5 +1,18 @@
-! Dec 8, 2024 https://edition.cnn.com
-!edition.cnn.com##.container_list-headlines-with-images__field-links.container__field-links
+! Apr 23, 2025 https://bsky.app
+||cordyceps.us-west.host.bsky.network/xrpc/app.bsky.unspecced.getTrendingTopics$xhr,domain=bsky.app
+||public.api.bsky.app/xrpc/app.bsky.unspecced.getTrendingTopics?
+||cordyceps.us-west.host.bsky.network/xrpc/app.bsky.graph.getSuggestedFollowsByActor$xhr,domain=bsky.app
+!Block suggested follows and suggested topics on network level
+! Apr 18, 2025 https://bsky.app
+bsky.app##.r-14lw9ot.css-175oi2r > div.css-175oi2r > div.css-175oi2r:has-text(/Trending/)
+bsky.app##div[style$='"Segoe UI Emoji"; font-variant: no-contextual;']:has-text(/Trending/):upward(div[style$="4px;"]):upward(1)
+!|web-cdn.bsky.app/static/js/src/state/preferences/trending.tsx$domain=bsky.app
+!||web-cdn.bsky.app/static/js/src/screens/Search/modules/ExploreTrendingTopics.tsx$domain=bsky.app
+!||web-cdn.bsky.app/static/js/src/screens/Search/modules/ExploreTrendingTopics.tsx$domain=bsky.app
+!||web-cdn.bsky.app/static/js/src/state/queries/trending$domain=bsky.app
+!Above should block queries from the Trending folder, doesn't seem to work
+! May 18, 2025 https://bsky.app
+bsky.app##input[aria-label="Search"]:upward(3) ~ div
 
 
 ! Nov 1, 2024 https://www.washingtonpost.com
@@ -15,10 +28,14 @@ www.washingtonpost.com##div[class="grid-body"]:style(max-width: 2000px;)
 www.washingtonpost.com##.article-footer
 ! Related Articles
 www.washingtonpost.com##.subtype-magnet.type-custom_embed.article-body.wpds-c-PJLV
+!www.washingtonpost.com##div:has-text(/Could not connect to the reCAPTCHA service. Please check your internet connection and reload to get a reCAPTCHA challenge./)
+!Anoying false-postive captcha notice
 
 ! Jan 29 - Feb 20, 2025 https://www.aljazeera.com
 www.aljazeera.com##.more-on
 www.aljazeera.com##.recommended
+www.aljazeera.com##.article-pre-footer.article-more-from-topic
+www.aljazeera.com###article-most-read
 
 
 ! Apr 1, 2025 https://foreignpolicy.com
@@ -32,6 +49,8 @@ foreignpolicy.com##.sidebar
 foreignpolicy.com##.content-block
 foreignpolicy.com##.header-nav__main--alt.header-nav__main
 foreignpolicy.com##.related-articles--no-video.fp-related-wrapper
+foreignpolicy.com###browser-compatibility-error
+
 
 ! Apr 1, 2025 https://gizmodo.com
 gizmodo.com##.max-w-sm.min-w-\[300px\].ml-auto.h-full.flex-col.flex
@@ -49,6 +68,7 @@ www.reuters.com##div[class^=regular-article-layout__right-rail__]
 ! Apr 1, 2025 https://www.economist.com
 www.economist.com##.ekf19570.css-mqgbir
 ||www.economist.com/engassets/_next/static/chunks/pages/article$script,domain=www.economist.com
+www.economist.com##div[data-optimizely^="related-articles-section"]:has-text(/More from/)
 
 ! Apr 1, 2025 https://techcrunch.com
 ||jac.yahoosandbox.com/2.0.0/safeframe.html$subdocument
@@ -59,6 +79,7 @@ techcrunch.com##.has-error.wp-block-techcrunch-seamless-scroll.seamless-scroll
 ! Apr 28, 2025 https://techcrunch.com
 techcrunch.com##.seamless-scroll__loader:has-text(/Loading the next article/)
 techcrunch.com##.wp-block-techcrunch-seamless-scroll.seamless-scroll > div:has-text(/next article/)
+techcrunch.com##.wp-block-group-is-layout-flow.is-layout-flow.article-bottom-section.wp-block-group:has(h2):has-text(/Related/)
 
 
 
@@ -296,12 +317,8 @@ theonion.com##div[class^="has-full-height wp-block-template-part"]:has-text(/Rec
 theonion.com##div[class^="wp-block-template-part"]:has(section)
 theonion.com##p[class^="has-primary-1-color has-text-color has-link-color has-tablet-gothic-semi-condensed-font-family"]:has-text(/Explore More Videos/)
 
-! Apr 23, 2025 https://bsky.app
-||cordyceps.us-west.host.bsky.network/xrpc/app.bsky.unspecced.getTrendingTopics$xhr,domain=bsky.app
-||cordyceps.us-west.host.bsky.network/xrpc/app.bsky.graph.getSuggestedFollowsByActor$xhr,domain=bsky.app
-!Block suggested follows and suggested topics on network level
-! Apr 18, 2025 https://bsky.app
-bsky.app##.r-14lw9ot.css-175oi2r > div.css-175oi2r > div.css-175oi2r:has-text(/Trending/)
+
+
 
 ! Apr 23, 2025 https://app.adfontesmedia.com
 app.adfontesmedia.com##.ant-notification-notice-closable.ant-notification-notice
@@ -321,11 +338,10 @@ www.voanews.com##.design-top-offset.pull-left.col-lg-4.col-md-4.col-sm-12.col-xs
 www.voanews.com###wrowblock-27868_21:has-text(/Latest stories/)
 
 ! Apr 23, 2025 https://medium.com
-medium.com##div[class="cj bh ht hu hv hw"]:has-text(/More from/)
-medium.com##.l.adh.adg:has-text(/Recommended from Medium/)
-
-! Apr 24, 2025 https://www.economist.com
-www.economist.com##div[data-optimizely^="related-articles-section"]:has-text(/More from/)
+medium.com##div[class="ab ca"]:has-text(/More from/)
+!More from the writer
+medium.com##div[class="ab ca"]:has(a[href^="https://medium.com/?source=post_page---read_next_recirc"])
+!Medium recommends...
 
 ! Apr 24, 2025 https://www.nytimes.com
 www.nytimes.com##div[aria-labelledby^="storyline-latest-updates"]:has-text(/Live Updates/)
@@ -333,9 +349,7 @@ www.nytimes.com##div[aria-labelledby^="storyline-latest-updates"]:has-text(/Live
 ! Apr 24, 2025 https://www.nbcnews.com
 www.nbcnews.com##div[data-testid="marqueeBreaking"]
 
-! Apr 24, 2025 https://www.studocu.com
-www.studocu.com##div.banner-wrapper._8690b6fc16a3:nth-of-type(8):has-text(/Découvre plus de/)
-||www.studocu.com/api/tracking/event/$xhr,domain=www.studocu.com
+
 
 ! Apr 27, 2025 https://www.theguardian.com
 www.theguardian.com##.dcr-b3fmmo > ul > li:has-text(/Latest updates/)
@@ -359,15 +373,11 @@ www.cbc.ca##.story > ul:has(li):has(a)
 english.elpais.com##section[data-dtm-region="articulo_ultimas-noticias"]
 english.elpais.com##section[data-dtm-region="articulo_lom"]
 
-! Apr 29, 2025 https://techcrunch.com
-techcrunch.com##.wp-block-group-is-layout-flow.is-layout-flow.article-bottom-section.wp-block-group:has(h2):has-text(/Related/)
 
 ! Apr 29, 2025 https://theaggressiveprogressive.substack.com
 theaggressiveprogressive.substack.com##div[aria-label="Top Posts Footer"]
 
-! Apr 30, 2025 https://www.theverge.com
-www.theverge.com##div[class=""]:has-text(/Donald Trump/)
-www.theverge.com##div[class^="duet--article--related"]:has-text(/Related/)
+
 
 ! Apr 30, 2025 https://www.washingtonpost.com
 www.washingtonpost.com##div[aria-roledescription="carousel"]:has-text(/Follow live updates/)
@@ -378,8 +388,6 @@ www.washingtonpost.com##div[aria-roledescription="carousel"]:has-text(/Follow li
 
 ! Apr 30, 2025 https://www.sparknotes.com
 www.sparknotes.com##.tag--interior-right-rail-blog.most-viewed-blogs
-
-www.example.com##a:style(color:yellow)
 
 ! May 1, 2025 https://www.techradar.com
 www.techradar.com##div[data-recirc-id="article-river-stacked-adviser:related"]:has-text(/Read more/)
@@ -467,8 +475,113 @@ www.newyorker.com##h2[class~="BaseWrap"]:has-text(/New Yorker Favorites/):upward
 otenews.com##.inside-right-sidebar
 otenews.com##div.Teckshop-related-posts
 
-! May 6, 2025 https://www.zdf.de
-www.zdf.de##h2[id=":S2:"]:has-text(/Mehr aus ZDFheute live/):upward(div):upward(section)
 
-! May 6, 2025 https://foreignpolicy.com
-foreignpolicy.com###browser-compatibility-error
+
+
+! May 7, 2025 https://www.maketecheasier.com
+www.maketecheasier.com##div[class~=sidebar-posts]
+www.maketecheasier.com##h3[class~="gb-text"]:has-text(/Read next/):upward(div)
+
+! May 7, 2025 https://www.politico.eu
+www.politico.eu##span[class^="content-header"]:has-text(/Our readers read next/):upward(h2):upward(div):upward(div)
+www.politico.eu##span[class^="content-header-new"]:has-text(/More from/):upward(div):upward(div)
+
+! May 8, 2025 https://edition.cnn.com
+edition.cnn.com##div[class="content-recs"]:has-text(/More from CNN/)
+
+
+
+
+! May 9, 2025 https://punchbowl.news
+punchbowl.news##.mlFrontPage-top-full-bleed__banner
+
+! May 9, 2025 https://adfontesmedia.com
+adfontesmedia.com##div[class="boxzilla boxzilla-40838 boxzilla-bottom-left boxzilla-mailchimp-signup-embedded-form"]
+
+! May 10, 2025 https://chicago.suntimes.com
+chicago.suntimes.com##div.Enhancement.RelatedList
+
+! May 10, 2025 https://www.wsj.com
+www.wsj.com##h2[class$="-SectionLabel"]:has-text(/What to Read Next/)
+www.wsj.com##div[aria-label="What to Read Next"]
+www.wsj.com##div[aria-label="What to Read Next"]+div:has-text(/Videos/)
+www.wsj.com##div[style="min-height:320px"]:has(a[href="https://www.realtor.com/"]):has-text(/Real Estate Insights/)
+
+
+! May 10, 2025 https://devclass.com
+devclass.com##div[class="relpost-thumb-container"]
+
+! May 11, 2025 https://www.who.int
+www.who.int##div[class="related-items"]
+
+
+
+
+
+! May 11, 2025 https://www.mediaite.com
+www.mediaite.com##div[class~="c-most-popular-posts"]
+www.mediaite.com##div[class$="c-most-popular-posts-heading"]
+www.mediaite.com##.c-youtube-container
+www.mediaite.com##.c-article-sidebar
+www.mediaite.com##div[class="o-section-label"]:has-text(/You may also like:/):upward(div):upward(aside)
+www.mediaite.com##section[id="featured-posts"]
+
+! May 11, 2025 https://www.thedailybeast.com
+www.thedailybeast.com##div[class="trending-now"]
+
+! May 13, 2025 https://www.rawstory.com
+www.rawstory.com##div[class^="column-right sidebar-column"]:has(img)
+
+! May 13, 2025 https://thehill.com
+thehill.com##section[class^="most-popular-widget hill-article-list"]
+thehill.com##section[class^="just-in hill-article-list"]
+
+! May 14, 2025 https://thehill.com
+thehill.com##.extended-scroll__more-news:has-text(/News/)
+thehill.com##div[class="extended-scroll__video-hilltv"]
+
+
+! May 15, 2025 https://www.nytimes.com
+www.nytimes.com##h3[id=more-in-europe-section]:upward(div):upward(section)
+
+! May 15, 2025 https://www.themoscowtimes.com
+www.themoscowtimes.com##.sidebar__sticky:has-text(/Most read/):has-text(/Just in/)
+www.themoscowtimes.com##h2[class="cluster__label header--style-3"]:has-text(/Read more/):upward(section)
+www.themoscowtimes.com##aside[class="article__related-article"]:upward(div)
+www.themoscowtimes.com##article ~ article
+www.themoscowtimes.com##.next-article-loader.container
+
+! May 15, 2025 https://www.theverge.com
+www.theverge.com##h2[class^="duet--article--dangerously-set-cms-markup"]:has-text(/More in this stream/):upward(div):upward(div):upward(div):upward(div)
+www.theverge.com##div[class=""]:has-text(/Donald Trump/)
+www.theverge.com##div[class^="duet--article--related"]:has-text(/Related/)
+! May 17, 2025 https://www.the-independent.com
+www.the-independent.com##aside[class$="sidebar"]:has-text(/Read Next/):has-text(/Popular videos/)
+
+! May 17, 2025 https://www.turkiyetoday.com
+www.turkiyetoday.com##.moreFromTurkiyeToday.fourBoxes
+
+
+! May 18, 2025 https://www.politico.eu
+www.politico.eu##span[class="content-header-new__title-text"]:has-text(/Top stories/):upward(h2[class="content-header-new__title"]):upward(2)
+www.politico.eu##span[class="content-header-new__title-text"]:has-text(/Explore More/):upward(h2[class="content-header-new__title"]):upward(footer[class="article__footer  without-secondary-content "])
+
+
+! May 18, 2025 https://thehill.com
+thehill.com##.extended-scroll__top-stories
+
+! May 18, 2025 https://theconversation.com
+theconversation.com##h3[class="slammed border"]:has-text(/You might also like/):upward(div):upward(div[class="react-content-related-container"])
+
+! May 18, 2025 https://www.billoreilly.com
+www.billoreilly.com###TICKER > table > tbody > tr > td
+
+! May 19, 2025 https://abcnews.go.com
+abcnews.go.com##div[data-testid="prism-GridColumn"][class^="theme-e FITT_Article_main__sidebar"]:has(h2):has-text(/Popular Reads/)
+abcnews.go.com##h3[id^="MORE"]:upward(8)
+
+! May 20, 2025 https://www.tomshardware.com
+www.tomshardware.com###article-body > aside[data-component-name="Recirculation:ArticleRiver"]
+www.tomshardware.com##div[data-recirc-id="article-river-stacked-adviser:related"]
+www.tomshardware.com##div[data-recirc-id="article-river-stacked-solr:latest-category"]
+www.tomshardware.com##div[data-recirc-id="article-river-stacked-solr:latest-articletype"]
