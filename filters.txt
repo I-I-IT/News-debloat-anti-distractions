@@ -1,3 +1,6 @@
+! Title: News debloater 
+! Homepage: https://github.com/I-I-IT/News-sidebard-and-related-article-remover
+! Description: uBlock Origin filter removing news websites features to keep you reading, including "Trending Topics", "top stories", etc.
 ! Apr 18, 2025 Bluesky  (https://bsky.app)
 !trending topics
 bsky.app##.r-14lw9ot.css-175oi2r > div.css-175oi2r > div.css-175oi2r:has-text(/Trending/)
