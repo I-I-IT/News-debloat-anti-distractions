@@ -504,3 +504,8 @@ www.billoreilly.com###TICKER > table > tbody > tr > td
 ! May 19, 2025 ABC News (https://abcnews.go.com)
 abcnews.go.com##div[data-testid="prism-GridColumn"][class^="theme-e FITT_Article_main__sidebar"]:has(h2):has-text(/Popular Reads/)
 abcnews.go.com##h3[id^="MORE"]:upward(8)
+
+
+! 4 Jun 2025 Heise, Europe Tech News (https://www.heise.de)
+www.heise.de##aside[aria-role="complementary"]:has-text(/heise online/)
+www.heise.de##div[data-module-name="TeasersModule"]:has(h2):has-text(/Beliebte Bestenlisten/):upward(2)
