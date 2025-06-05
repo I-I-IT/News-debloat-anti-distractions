@@ -386,6 +386,12 @@ www.tomshardware.com##div[data-recirc-id="article-river-stacked-adviser:related"
 www.tomshardware.com##div[data-recirc-id="article-river-stacked-solr:latest-category"]
 www.tomshardware.com##div[data-recirc-id="article-river-stacked-solr:latest-articletype"]
 
+! 5 Jun 2025 Toms Guide https://www.tomsguide.com
+www.tomsguide.com##script[data-id="vanilla-slice-popularBox-hydrate"]
+www.tomsguide.com##div[class="slice-container popular-box-slice popularBox slice-container-popularBox slice-hydrated"]:has(section[class="popular-box"]):upward(2)
+www.tomsguide.com##div[data-recirc-id="article-river-stacked-adviser:related"]
+www.tomsguide.com##div[data-recirc-id="article-river-stacked-solr:latest-articletype"]
+
 ! May 1, 2025 BBC (https://www.bbc.co.uk)
 www.bbc.co.uk###topStories-label-aside-content:has-text(/Top stories/)
 www.bbc.co.uk###features-label-aside-content:has-text(/More to explore/)
