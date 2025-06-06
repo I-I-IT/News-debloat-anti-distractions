@@ -20,7 +20,7 @@ Feel free to open a PR adding new filters.
 
 ### Do I remove in-article links to other articles?
 
-No I don't. Although it affects the reading experience, as the reading experience is no longer linear but a trace between metalinks. What you can do however, is change the color of links from blue to gray. You could even put those links in the same color as text. To change the colors on Firefox, follow this guide. https://support.mozilla.org/en-US/kb/change-fonts-and-colors-websites-use
+No I don't. Although links affects the reading experience, as the reading experience is no longer linear but a trace between metalinks, I don't want to touch the essence of the speech. What you can do however, is change the color of links from blue to gray. You could even put those links in the same color as text. uBlock doesn't generally support general cosmetic filters, but a hack is that you specify the website TLD and it will apply to all those domains. So to make links grey in all .com websites, use com##a:style(color: grey!important). Replace 'com' by other domains like org, io and your country domain to make it across the board.
 
 ### What don't I remove?
 
