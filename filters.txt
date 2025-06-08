@@ -1,7 +1,7 @@
-! Title: News debloater 
+! Title: 📰 🗞️ News debloater 🧼
 ! Homepage: https://github.com/I-I-IT/News-sidebard-and-related-article-remover
 ! Description: uBlock Origin filter removing news websites features to keep you reading, including "Trending Topics", "top stories", etc.
-! Version: 27 May 2025
+! Version: June 08 2025
 ! Expires: 6 days
 
 ! Apr 18, 2025 Bluesky  (https://bsky.app)
@@ -116,12 +116,16 @@ www.wsj.com##.series-nav__inset-container
 www.wsj.com##div.e1ewmsuz12.css-j6808u:nth-of-type(3) 
 !More articles and videos, plus real estates insights
 www.wsj.com##h2[class$="-SectionLabel"]:has-text(/What to Read Next/)
-www.wsj.com##div[aria-label="What to Read Next"]
 www.wsj.com##div[aria-label="What to Read Next"]+div:has-text(/Videos/)
 www.wsj.com##div[style="min-height:320px"]:has(a[href="https://www.realtor.com/"]):has-text(/Real Estate Insights/)
 www.wsj.com##div[aria-label="Most Popular News"]
+www.wsj.com##div[data-skip-label="Most Popular News"]
 www.wsj.com##div[aria-label="Most Popular Opinion"]
 www.wsj.com##div[aria-label="Most Popular Opinion"] + div
+www.wsj.com##h4:has-text(/SHARE YOUR THOUGHTS/m):upward(div[data-inset_type="richtext"])
+www.wsj.com##h3:has-text(/Further Reading/):upward(8)
+www.wsj.com##div[aria-label="What To Read Next"][data-block="doNotPrint"]
+
 
 
 ! Apr 8, 2025 Investing.com (https://www.investing.com)
@@ -515,3 +519,7 @@ abcnews.go.com##h3[id^="MORE"]:upward(8)
 ! 4 Jun 2025 Heise, Europe Tech News (https://www.heise.de)
 www.heise.de##aside[aria-role="complementary"]:has-text(/heise online/)
 www.heise.de##div[data-module-name="TeasersModule"]:has(h2):has-text(/Beliebte Bestenlisten/):upward(2)
+
+! 4 Jun 2025 TechReport (https://techreport.com)
+techreport.com##div[class=wp-block-rc-trending-news]
+techreport.com##div[class="more-posts"]
