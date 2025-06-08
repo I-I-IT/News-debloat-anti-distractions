@@ -6,16 +6,15 @@
 
 ! Apr 18, 2025 Bluesky  (https://bsky.app)
 !trending topics
-bsky.app##.r-14lw9ot.css-175oi2r > div.css-175oi2r > div.css-175oi2r:has-text(/Trending/)
 bsky.app##div[style$='"Segoe UI Emoji"; font-variant: no-contextual;']:has-text(/Trending/):upward(div[style$="4px;"]):upward(1)
 
 ! Nov 1, 2024 The Post (https://www.washingtonpost.com)
-www.washingtonpost.com###react-aria4685572338-\:rc\: > li.wpds-c-kQXcnu-ieEAsZA-css.wpds-c-kQXcnu
-www.washingtonpost.com##div.PJLV-ipMxRz-css.PJLV:nth-of-type(1)
-www.washingtonpost.com##.PJLV-iexQdDD-css.PJLV
-www.washingtonpost.com##li.wpds-c-kQXcnu-ieEAsZA-css.wpds-c-kQXcnu
-www.washingtonpost.com##.wpds-c-iWKphc-ilXwBK-hasStickyRailHeight-true.wpds-c-iWKphc
-www.washingtonpost.com##.mb-md.db-ns.justify-center.flex > div
+!www.washingtonpost.com###react-aria4685572338-\:rc\: > li.wpds-c-kQXcnu-ieEAsZA-css.wpds-c-kQXcnu
+!www.washingtonpost.com##div.PJLV-ipMxRz-css.PJLV:nth-of-type(1)
+!www.washingtonpost.com##.PJLV-iexQdDD-css.PJLV
+!www.washingtonpost.com##li.wpds-c-kQXcnu-ieEAsZA-css.wpds-c-kQXcnu
+!www.washingtonpost.com##.wpds-c-iWKphc-ilXwBK-hasStickyRailHeight-true.wpds-c-iWKphc
+!www.washingtonpost.com##.mb-md.db-ns.justify-center.flex > div
 www.washingtonpost.com##div[class="grid-body"]:style(max-width: 2000px;)
 !Try making larger displaying now that sidebar is gone
 ! Apr 2 -Apr 7, 2025 https://www.washingtonpost.com
@@ -75,6 +74,8 @@ techcrunch.com##.has-error.wp-block-techcrunch-seamless-scroll.seamless-scroll
 techcrunch.com##.seamless-scroll__loader:has-text(/Loading the next article/)
 techcrunch.com##.wp-block-techcrunch-seamless-scroll.seamless-scroll > div:has-text(/next article/)
 techcrunch.com##.wp-block-group-is-layout-flow.is-layout-flow.article-bottom-section.wp-block-group:has(h2):has-text(/Related/)
+techcrunch.com##div[class="wp-block-template-part wp-block-template-part--sidebar-variation-1-articles"]
+
 
 ! Apr 3, 2025 MSN (https://www.msn.com)
 www.msn.com###ViewsPageId-AA1Ces5n > .consumption-page-feed-wrapper
@@ -91,7 +92,7 @@ www.theverge.com##._1vx82920
 www.theverge.com##._1vx82923
 www.theverge.com##.n5bh2k0.duet--layout--article-recirc-color-container
 www.theverge.com##._8syhok0._1ymtmqpz.duet--layout--header-pattern > .mq7s704
-www.theverge.com##h2[class^="duet--article--dangerously-set-cms-markup"]:has-text(/More in this stream/):upward(div):upward(div):upward(div):upward(div)
+www.theverge.com##h2[class^="duet--article--dangerously-set-cms-markup"]:has-text(/More in this stream/):upward(div):upward(2):upward(div)
 www.theverge.com##div[class^="duet--article--related"]:has-text(/Related/)
 
 ! Apr 7, 2025 AP (https://apnews.com)
@@ -109,6 +110,10 @@ www.nytimes.com##.css-s2htvn
 www.nytimes.com##.css-ew4tgv
 www.nytimes.com##div[aria-labelledby^="storyline-latest-updates"]:has-text(/Live Updates/)
 www.nytimes.com##h3[id=more-in-europe-section]:upward(div):upward(section)
+www.nytimes.com##div[data-testid^=RelatedLinksBlock]
+www.nytimes.com##:matches-path(/^/$/)video[data-testid="cinemagraph"][class~="cinemagraph_video"]:upward(div)
+!GIF videos on NYT homepage are getting aggresive and out of control. This hides them. This doesn't affect potential normal videos on homepage.
+
 
 ! Apr 7- May 10, 2025 The Journal (https://www.wsj.com)
 www.wsj.com##.series-nav__inset-container 
@@ -125,6 +130,8 @@ www.wsj.com##div[aria-label="Most Popular Opinion"] + div
 www.wsj.com##h4:has-text(/SHARE YOUR THOUGHTS/m):upward(div[data-inset_type="richtext"])
 www.wsj.com##h3:has-text(/Further Reading/):upward(8)
 www.wsj.com##div[aria-label="What To Read Next"][data-block="doNotPrint"]
+www.wsj.com##a[href="https://www.wsj.com/buyside/?mod=wsj_article_buy_widget"]:upward(5)
+www.wsj.com##div[aria-label="Most Popular Opinion"][role="complementary"]
 
 
 
@@ -170,8 +177,12 @@ www.politifact.com##li.o-listicle__item
 ! Apr 18, 2025 ProPublica (https://www.propublica.org)
 www.propublica.org##.hide-print.\|.wide-sm.left.wrap.out03.size03.promo-series
 www.propublica.org##.hide-print.\|.wide-md.left.wrap.out02.size02.topics-list
-www.propublica.org##div[class="center article"]:style(width: calc(((((100%) / 14) * 8) + 14rem)*1/1);)
-!Make displaying bigger, original formula has - 14 in first parenthesis
+www.propublica.org##div[class="center article"]:style(width:90% !important)
+www.propublica.org##div[class~='article-page-section-more-in-topic']
+www.propublica.org##div[class="most-read | hide-print"]:upward(div[class="page-recirc__most-read"])
+www.propublica.org##aside[class$=hide-print][data-pp-location="story promo"]
+www.propublica.org##div[class$="hide-print"]
+
 
 ! Apr 18, 2025 TownHall (https://townhall.com)
 townhall.com##.order-5.order-md-5.border-start.col-md-4
@@ -256,12 +267,12 @@ www.criticalthreats.org##.ng-scope.reading-list-item
 www.criticalthreats.org###reading-list-title
 www.criticalthreats.org##.active.reading-list-item
 
-www.ghacks.net##div[class^="evergreen-posts"]
-!(/^[1-2][0-9][0-9][0-9])
 
 ! Apr 19, 2025 GHacks  (https://www.ghacks.net)
 www.ghacks.net##.ghacks-content > div:has-text(/ Previous Post/)
 www.ghacks.net##.mt--30.mb--20.heading--small:has-text(/Tutorials & Tips/)
+www.ghacks.net##div[class^="evergreen-posts"]
+!(/^[1-2][0-9][0-9][0-9])
 
 ! Apr 19, 2025 Times of Israel (https://www.timesofisrael.com)
 www.timesofisrael.com###most
@@ -291,6 +302,8 @@ www.natesilver.net##h5:has-text(/See also:/)
 !The Register
 www.theregister.com##.ticker_cta
 www.theregister.com##.similar_topics
+www.theregister.com##ul[class="listinks"]:matches-css-before(content: "MORE CONTEXT")
+www.theregister.com##div[id="story-bot-col"]:has(div[class="headlines"])
 
 ! Apr 22, 2025 HuggingFace Blog
 huggingface.co##p:nth-of-type(7):has-text(/click to follow/)
@@ -341,6 +354,10 @@ www.theguardian.com##.dcr-b3fmmo > ul > li:has-text(/Latest updates/)
 
 ! Apr 28, 2025 Politico US (https://www.politico.com)
 www.politico.com##.hide-under-small.right-zone.center-vertically.container__column--story.container__column:has-text(/MOST READ/)
+www.politico.com##aside[class="story-enhancement"][id="aside-1"]
+www.politico.com##div[class="container__column container__column--story hide-under-small"]:style(display: none !important)
+www.politico.com##div[class="container__column container__column--story center-vertically right-zone hide-under-small"]:style(display: none !important)
+
 ! May 7-18, 2025 Politico EU (https://www.politico.eu)
 www.politico.eu##span[class^="content-header"]:has-text(/Our readers read next/):upward(h2):upward(div):upward(div)
 www.politico.eu##span[class^="content-header-new"]:has-text(/More from/):upward(div):upward(div)
@@ -353,8 +370,8 @@ www.politico.eu##span[class="content-header-new__title-text"]:has-text(/Explore 
 ! Apr 28, 2025 PBS (https://www.pbs.org)
 www.pbs.org###recirc-latest:has-text(/The Latest/)
 www.pbs.org##.post__aside--besideImage.post__aside:has-text(/Related/)
-www.pbs.org##p:has(a):has-text(/WATCH:/)
-www.pbs.org##p:has(a):has-text(/READ MORE:/)
+www.pbs.org##p:has(a):has-text(/WATCH:/m)
+www.pbs.org##p:has(a):has-text(/READ MORE:/m)
 
 ! Apr 29, 2025 ElPais english version (https://english.elpais.com)
 english.elpais.com##section[data-dtm-region="articulo_ultimas-noticias"]
@@ -384,7 +401,8 @@ www.techradar.com##.trending__list
 www.techradar.com##.trending__wrapper
 www.techradar.com##.slice-container-trending.trendingbar.trending-bar-container.slice-container
 www.techradar.com##aside[data-component-name="Recirculation:ArticleRiver"]:has(span):has-text(/You may like/)
-! May 20, 2025 https://www.tomshardware.com
+
+! May 20, 2025 Tom's Hardware (https://www.tomshardware.com)
 www.tomshardware.com###article-body > aside[data-component-name="Recirculation:ArticleRiver"]
 www.tomshardware.com##div[data-recirc-id="article-river-stacked-adviser:related"]
 www.tomshardware.com##div[data-recirc-id="article-river-stacked-solr:latest-category"]
@@ -403,7 +421,7 @@ www.bbc.co.uk###mostRead-label-aside-content:has-text(/Most read/)
 www.bbc.co.uk###elsewhere-label-aside-content:has-text(/Elsewhere on the BBC/)
 
 ! May 2, 2025 Kiyv Post(https://www.kyivpost.com)
-www.kyivpost.com##.d-md-block.d-none.popular-posts:has-text(/POPULAR/)
+www.kyivpost.com##.d-md-block.d-none.popular-posts:has-text(/POPULAR/m)
 www.kyivpost.com##div.section-additional-list-posts.align-self-center.row:has-text(/More on/)
 www.kyivpost.com##div.section-additional-list-posts.align-self-center:has-text(/Read Next/)
 www.kyivpost.com###sponsored-content + div + div:has-text(/Previous/)
@@ -523,3 +541,17 @@ www.heise.de##div[data-module-name="TeasersModule"]:has(h2):has-text(/Beliebte B
 ! 4 Jun 2025 TechReport (https://techreport.com)
 techreport.com##div[class=wp-block-rc-trending-news]
 techreport.com##div[class="more-posts"]
+
+! 28 May 2025 Forbes (https://www.forbes.com)
+www.forbes.com##a[class="embed-base color-body color-body-border link-embed embed-0"]
+
+! 28 May 2025 Russia Today, Russia state-media (https://www.rt.com)
+www.rt.com##a[class="link link_disabled"][href="/news/"]:upward(div[class="showDesktop"])
+www.rt.com##a[class="link link_disabled"][href="/tags/feature/"]:upward(div[data-widgets="mainpage1"])
+www.rt.com##.main-page-podcasts-white
+www.rt.com##div[class="Grid-block  Grid-is2to3-xs_is1to1 "]:style(max-width:90% !important)
+www.rt.com##div[class="Grid-block  Grid-is2to3-xs_is1to1 "]:style(width:75% !important)
+!This modifies the width to make it larger
+
+! 2 Jun 2025 https://www.nj.com
+www.nj.com##div[id="recommended-articles"][class="related-articles-container"][source="parsely-test"]
