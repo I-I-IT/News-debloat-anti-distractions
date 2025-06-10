@@ -27,6 +27,8 @@ www.washingtonpost.com##.subtype-magnet.type-custom_embed.article-body.wpds-c-PJ
 www.washingtonpost.com##.grid-rail
 ! Apr 30, 2025 https://www.washingtonpost.com
 www.washingtonpost.com##div[aria-roledescription="carousel"]:has-text(/Follow live updates/)
+www.washingtonpost.com##div[class$=type-topic-follow-interstitial] 
+!Annoying "Follow Topic" 
 
 ! Jan 29 - Feb 20, 2025 Aljazeera english (https://www.aljazeera.com)
 www.aljazeera.com##.more-on
@@ -132,6 +134,7 @@ www.wsj.com##h3:has-text(/Further Reading/):upward(8)
 www.wsj.com##div[aria-label="What To Read Next"][data-block="doNotPrint"]
 www.wsj.com##a[href="https://www.wsj.com/buyside/?mod=wsj_article_buy_widget"]:upward(5)
 www.wsj.com##div[aria-label="Most Popular Opinion"][role="complementary"]
+www.wsj.com##h4:has-text(/SHARE YOUR THOUGHTS/m):upward(div[data-inset_type="richtext"])
 
 
 
@@ -150,8 +153,9 @@ www.cookpolitical.com##.block-views-block-article-blocks-more-from-cook-politica
 www.cookpolitical.com##.block-views-block-article-blocks-featured-article
 !www.cookpolitical.com###-pgUyEdCoqOmQkQCRxSiQHCwkRxEpwYgwcMaSYyF5LE_353342
 !Potentially useless/out-of-date
-! LA Times Apr 10 2025
+! LA Times Apr 10 - June 10 2025
 www.latimes.com##.list-spacer-bottom
+www.latimes.com##div[class="promo promo-position-small promo-small"][data-content-type="article"][data-click="promoSmall"]
 
 ! Apr 17-23, 2025 Voice of America (https://www.voanews.com)
 www.voanews.com###ymla-section
@@ -440,8 +444,8 @@ punchbowl.news##.related-articles
 punchbowl.news##.mlFrontPage-top-full-bleed__banner
 
 ! May 2, 2025 Github (https://github.com)
-!Optional, this removes a misleading, non-removable prompt when you have profile privacy enabled
-!github.com##.mt-4.flash:has-text(/Only you can see your full profile/)
+This removes a misleading, non-removable prompt when you have profile privacy enabled.
+github.com##.mt-4.flash:has-text(/Only you can see your full profile/)
 
 ! May 2, 2025 ArsTechnica (https://arstechnica.com)
 arstechnica.com##div:has(div[class="post-navigation"])+div:has-text(/Most Read/)
@@ -555,3 +559,8 @@ www.rt.com##div[class="Grid-block  Grid-is2to3-xs_is1to1 "]:style(width:75% !imp
 
 ! 2 Jun 2025 https://www.nj.com
 www.nj.com##div[id="recommended-articles"][class="related-articles-container"][source="parsely-test"]
+
+! 10 Jun 2025 StackOverflow blog (https://stackoverflow.blog)
+stackoverflow.blog##div[class$="row-wrap"]~div:has-text(/Recent articles/m)~div
+stackoverflow.blog##div[class$="row-wrap"]~div:has-text(/Recent articles/m)
+stackoverflow.blog##aside article
