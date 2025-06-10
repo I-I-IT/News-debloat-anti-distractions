@@ -564,3 +564,7 @@ www.nj.com##div[id="recommended-articles"][class="related-articles-container"][s
 stackoverflow.blog##div[class$="row-wrap"]~div:has-text(/Recent articles/m)~div
 stackoverflow.blog##div[class$="row-wrap"]~div:has-text(/Recent articles/m)
 stackoverflow.blog##aside article
+
+! 10 Jun 2025 TechSpot (https://www.techspot.com)
+www.techspot.com##div[class="sidebarContent"]:has(a[href="/trending/"])
+www.techspot.com##:matches-path(/news/)div[class=related-news]
