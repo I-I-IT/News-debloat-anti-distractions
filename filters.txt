@@ -4,6 +4,9 @@
 ! Version: June 08 2025
 ! Expires: 6 days
 
+!Make your links grey instead of blue (optional)
+!com,dev,io,net,org,gov,app,social,gist,tv,video,ai,me,blog##a:style(color: grey!important)
+
 ! Apr 18, 2025 Bluesky  (https://bsky.app)
 !trending topics
 bsky.app##div[style$='"Segoe UI Emoji"; font-variant: no-contextual;']:has-text(/Trending/):upward(div[style$="4px;"]):upward(1)
@@ -568,3 +571,11 @@ stackoverflow.blog##aside article
 ! 10 Jun 2025 TechSpot (https://www.techspot.com)
 www.techspot.com##div[class="sidebarContent"]:has(a[href="/trending/"])
 www.techspot.com##:matches-path(/news/)div[class=related-news]
+
+! 11 Jun 2025 Windows Central (https://www.windowscentral.com)
+www.windowscentral.com##div[class="slice-container popular-box-slice popularBox slice-container-popularBox slice-hydrated"][id="slice-container-popularBox"]
+www.windowscentral.com##aside[data-component-name="Recirculation:ArticleRiver"]
+www.windowscentral.com##div[data-recirc-id="article-river-stacked-solr:latest-category"]
+www.windowscentral.com##aside > div[data-recirc-id="article-river-stacked-solr:latest-articletype"]
+
+!www.windowscentral.com##div[data-recirc-id="article-river-stacked-adviser:related"] #Optional, as this is recommendations on same topic and can be useful, especially when it is useful guides.
