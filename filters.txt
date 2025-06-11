@@ -578,4 +578,5 @@ www.windowscentral.com##aside[data-component-name="Recirculation:ArticleRiver"]
 www.windowscentral.com##div[data-recirc-id="article-river-stacked-solr:latest-category"]
 www.windowscentral.com##aside > div[data-recirc-id="article-river-stacked-solr:latest-articletype"]
 
-!www.windowscentral.com##div[data-recirc-id="article-river-stacked-adviser:related"] #Optional, as this is recommendations on same topic and can be useful, especially when it is useful guides.
+!www.windowscentral.com##div[data-recirc-id="article-river-stacked-adviser:related"] 
+#Optional, as this is recommendations on same topic and can be useful, especially when it is useful guides.
