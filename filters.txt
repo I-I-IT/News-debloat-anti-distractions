@@ -1,7 +1,7 @@
 ! Title: 📰 🗞️ News debloater 🧼
-! Homepage: https://github.com/I-I-IT/News-sidebard-and-related-article-remover
+! Homepage: https://github.com/I-I-IT/News-debloat-anti-distractions/
 ! Description: uBlock Origin filter removing news websites features to keep you reading, including "Trending Topics", "top stories", etc.
-! Version: June 08 2025
+! Version: June 28 2025
 ! Expires: 6 days
 
 !Make your links grey instead of blue (optional)
@@ -118,6 +118,10 @@ www.nytimes.com##h3[id=more-in-europe-section]:upward(div):upward(section)
 www.nytimes.com##div[data-testid^=RelatedLinksBlock]
 www.nytimes.com##:matches-path(/^/$/)video[data-testid="cinemagraph"][class~="cinemagraph_video"]:upward(div)
 !GIF videos on NYT homepage are getting aggresive and out of control. This hides them. This doesn't affect potential normal videos on homepage.
+www.nytimes.com##section[data-testid="related_content"]
+www.nytimes.com##video[data-testid="cinemagraph"][class~="cinemagraph_video"]:upward(div)
+!Out of control homepage GIFs
+
 
 
 ! Apr 7- May 10, 2025 The Journal (https://www.wsj.com)
@@ -299,6 +303,7 @@ www.wired.com##.hide-read-more-ad
 www.wired.com##.KhyPp.SummaryCollectionGridSectionTitle-fCmYwG.fiHEJl.SectionTitleRoot-dBGvdq
 !wired.com##div[class^="ContentFooterWrapper"]:nth-of-type(1)
 www.wired.com##div.HEhan.iUEiRd.RowWrapper-UmqTg.BaseWrap-sc-gjQpdd:nth-of-type(1) > .wide-adrail.narrow.grid-layout--adrail.grid-items-2.grid-margins.grid.sjrqk.GridWrapper-cAzTTK
+www.wired.com##figure[data-testid="cne-interlude-container"][class^="VideoFigure"]:has(iframe)
 
 ! Apr 21, 2025 Bloomberg (https://www.bloomberg.com)
 www.bloomberg.com##.ContextualNav_slider__KvlEO.media-ui-Slider_isAtStart-n0WJnmO946M-
@@ -311,6 +316,10 @@ www.theregister.com##.ticker_cta
 www.theregister.com##.similar_topics
 www.theregister.com##ul[class="listinks"]:matches-css-before(content: "MORE CONTEXT")
 www.theregister.com##div[id="story-bot-col"]:has(div[class="headlines"])
+www.theregister.com##dom_annotate_related_questions
+www.theregister.com##div[id=story-bot-col]:has(div[class="keepreading"])
+www.theregister.com##div[class=similar_topics]:upward(div[class^="https:\/\/www.theregister.com"])
+!www.theregister.com##ul[class="listinks"]:matches-css-before(content:"MORE CONTEXT")
 
 ! Apr 22, 2025 HuggingFace Blog
 huggingface.co##p:nth-of-type(7):has-text(/click to follow/)
@@ -352,6 +361,7 @@ medium.com##div[class="ab ca"]:has-text(/More from/)
 !More from the writer
 medium.com##div[class="ab ca"]:has(a[href^="https://medium.com/?source=post_page---read_next_recirc"])
 !Medium recommends...
+medium.com##h2:has-text(/More from/):upward(4)
 
 ! Apr 24, 2025 NBC News (https://www.nbcnews.com)
 www.nbcnews.com##div[data-testid="marqueeBreaking"]
@@ -387,6 +397,8 @@ english.elpais.com##section[data-dtm-region="articulo_lom"]
 ! Apr 29, 2025 Substack (https://substack.com)
 !Only work on substack.com and subdomains, not substack on other domains
 substack.com##div[aria-label="Top Posts Footer"]
+substack.com##div[aria-label="Recent episodes"]
+substack.com##div[data-component-name=InstallSubstackAppToDOM]
 
 ! Apr 30, 2025 https://19thnews.org
 19thnews.org##.wp-block-single-article-grid.ups-block__single-article__list:has-text(/Read Next:/)
@@ -397,8 +409,7 @@ www.sparknotes.com##.tag--interior-right-rail-blog.most-viewed-blogs
 
 ! May 1, 2025 Tech Radar (https://www.techradar.com)
 www.techradar.com##div[data-recirc-id="article-river-stacked-adviser:related"]:has-text(/Read more/)
-www.techradar.com##div[data-recirc-id="article-river-stacked-solr:latest-articletype"]:has-text(/Latest/)
-www.techradar.com##div[data-recirc-id="article-river-stacked-solr:latest-category"]:has-text(/Latest/)
+www.techradar.com##div[data-recirc-id="article-river-stacked-solr:latest-articletype"|data-recirc-id="article-river-stacked-solr:latest-category"]
 www.techradar.com##h3#section-you-might-also-like + ul
 www.techradar.com##h3#section-you-might-also-like
 www.techradar.com##h3#section-you-may-also-like + ul
@@ -454,8 +465,7 @@ github.com##.mt-4.flash:has-text(/Only you can see your full profile/)
 arstechnica.com##div:has(div[class="post-navigation"])+div:has-text(/Most Read/)
 
 ! May 4, 2025 Apple Insider (https://appleinsider.com)
-appleinsider.com##.main-page.row > .col-lg-3:has(div[class="sbr-spotlight"]):has-text(/Top Stories/)
-appleinsider.com##div[aria-label="Latest News"]:has-text(/Latest News/)
+appleinsider.com##.main-page.row > .col-lg-3:has(div[class="sbr-spotlight"]):has-text(/Top Stories|Latest News/i)
 
 ! May 5, 2025 New Delhi TV (https://www.ndtv.com)
 www.ndtv.com##.s-lf-wid:has-text(/Related News/):has(h3[class="s-ttl-clr"])
@@ -525,7 +535,9 @@ www.themoscowtimes.com##article ~ article
 www.themoscowtimes.com##.next-article-loader.container
 
 ! May 17, 2025 The Independent (https://www.the-independent.com)
-www.the-independent.com##aside[class$="sidebar"]:has-text(/Read Next/):has-text(/Popular videos/)
+www.the-independent.com,independent.co.uk##aside[class$="sidebar"]:has-text(/Read Next/):has-text(/Popular videos/)
+www.independent.co.uk,##aside:has(div[data-component="MostPopularFeedList"])
+
 
 ! May 17, 2025 Turkey Today (https://www.turkiyetoday.com)
 www.turkiyetoday.com##.moreFromTurkiyeToday.fourBoxes
@@ -567,6 +579,8 @@ www.nj.com##div[id="recommended-articles"][class="related-articles-container"][s
 stackoverflow.blog##div[class$="row-wrap"]~div:has-text(/Recent articles/m)~div
 stackoverflow.blog##div[class$="row-wrap"]~div:has-text(/Recent articles/m)
 stackoverflow.blog##aside article
+stackoverflow.blog##div[class$="row-wrap"]~div:has-text(/Recent articles/)~div
+stackoverflow.blog##div[class$="row-wrap"]~div:has-text(/Recent articles/)
 
 ! 10 Jun 2025 TechSpot (https://www.techspot.com)
 www.techspot.com##div[class="sidebarContent"]:has(a[href="/trending/"])
@@ -580,3 +594,26 @@ www.windowscentral.com##aside > div[data-recirc-id="article-river-stacked-solr:l
 
 !www.windowscentral.com##div[data-recirc-id="article-river-stacked-adviser:related"] 
 #Optional, as this is recommendations on same topic and can be useful, especially when it is useful guides.
+
+! 19 Jun 2025 https://www.euractiv.com
+
+www.euractiv.com##:matches-path("/section/")h2:has-text(/Most recent/m):upward(div)
+
+! Yale Daily News, June 28 2025
+yaledailynews.com##div[class=article-sidebar]:has(div[class="most-read-title"])
+
+! Haaretz
+
+www.haaretz.com##h2:has-text(/Trending Now/):upward(div)+div
+
+!Psychology today
+
+www.psychologytoday.com##aside[class="layout-content-right-rail"][role="complementary"]
+www.psychologytoday.com##div[id^=block-blogentrymorefrom]
+
+!Electrek
+
+electrek.co##div[class^="cross-site-feed featured-items ninetofive"]:upward(aside)
+
+!Mozilla blog
+www.mozillafoundation.org##div[class="container d-print-none"]:has(div[class~="related-posts"]
