@@ -12,12 +12,12 @@
 bsky.app##div[style$='"Segoe UI Emoji"; font-variant: no-contextual;']:has-text(/Trending/):upward(div[style$="4px;"]):upward(1)
 
 ! Nov 1, 2024 The Post (https://www.washingtonpost.com)
-!www.washingtonpost.com###react-aria4685572338-\:rc\: > li.wpds-c-kQXcnu-ieEAsZA-css.wpds-c-kQXcnu
+!www.washingtonpost.com###react-aria4685572338-\:rc\: >li.wpds-c-kQXcnu-ieEAsZA-css.wpds-c-kQXcnu
 !www.washingtonpost.com##div.PJLV-ipMxRz-css.PJLV:nth-of-type(1)
 !www.washingtonpost.com##.PJLV-iexQdDD-css.PJLV
 !www.washingtonpost.com##li.wpds-c-kQXcnu-ieEAsZA-css.wpds-c-kQXcnu
 !www.washingtonpost.com##.wpds-c-iWKphc-ilXwBK-hasStickyRailHeight-true.wpds-c-iWKphc
-!www.washingtonpost.com##.mb-md.db-ns.justify-center.flex > div
+!www.washingtonpost.com##.mb-md.db-ns.justify-center.flex >div
 www.washingtonpost.com##div[class="grid-body"]:style(max-width: 2000px;)
 !Try making larger displaying now that sidebar is gone
 ! Apr 2 -Apr 7, 2025 https://www.washingtonpost.com
@@ -43,7 +43,7 @@ www.aljazeera.com###article-most-read
 foreignpolicy.com##div.hide-on-pages.sticky-container:nth-of-type(1)
 foreignpolicy.com##.top-ten-stories.trending-articles
 foreignpolicy.com##.sidebar-list
-foreignpolicy.com##.hide-on-gated-post.the-latest-container.sticky-container > div
+foreignpolicy.com##.hide-on-gated-post.the-latest-container.sticky-container >div
 foreignpolicy.com##.hide-on-gated-post.trending-container.sticky-container
 foreignpolicy.com##.hide-on-gated-post.the-latest-container.sticky-container
 foreignpolicy.com##.sidebar
@@ -77,7 +77,7 @@ techcrunch.com###comments_2988030 > .comments-widget
 ||techcrunch.com/_/_/_/_/?sidebar=a$xhr,1p
 techcrunch.com##.has-error.wp-block-techcrunch-seamless-scroll.seamless-scroll
 techcrunch.com##.seamless-scroll__loader:has-text(/Loading the next article/)
-techcrunch.com##.wp-block-techcrunch-seamless-scroll.seamless-scroll > div:has-text(/next article/)
+techcrunch.com##.wp-block-techcrunch-seamless-scroll.seamless-scroll >div:has-text(/next article/)
 techcrunch.com##.wp-block-group-is-layout-flow.is-layout-flow.article-bottom-section.wp-block-group:has(h2):has-text(/Related/)
 techcrunch.com##div[class="wp-block-template-part wp-block-template-part--sidebar-variation-1-articles"]
 
@@ -179,7 +179,7 @@ www.voanews.com##.design-top-offset.pull-left.col-lg-4.col-md-4.col-sm-12.col-xs
 www.voanews.com###wrowblock-27868_21:has-text(/Latest stories/)
 
 !Apr 18, 2025 Poynter (media watchdog) https://www.poynter.org
-www.poynter.org##.poynter-post-content > ul
+www.poynter.org##.poynter-post-content >ul
 www.poynter.org##h1:nth-of-type(1):has-text(/More on/)
 
 ! Apr 18, 2025 Politfact (https://www.politifact.com)
@@ -202,7 +202,7 @@ www.propublica.org##div[class$="hide-print"]
 
 ! Apr 18, 2025 TownHall (https://townhall.com)
 townhall.com##.order-5.order-md-5.border-start.col-md-4
-townhall.com##.mb-3.row > div.col
+townhall.com##.mb-3.row >div.col
 townhall.com##.d-print-none.post-after
 townhall.com##.thm-headroom--pinned.thm-headroom.tns-outer
 
@@ -217,7 +217,7 @@ www.cbc.ca##.relatedlinks
 www.cbc.ca##div.detailBodyContainer:nth-of-type(2)
 www.cbc.ca##.trendingList-sidebar
 www.cbc.ca##.similarListItem:has(a[class^="similarLink"])
-www.cbc.ca##.story > ul:has(li):has(a)
+www.cbc.ca##.story >ul:has(li):has(a)
 
 ! Apr 18, 2025 Financial Times (https://www.ft.com)
 www.ft.com##.o-grid-container.onward-journey__content
@@ -285,7 +285,7 @@ www.criticalthreats.org##.active.reading-list-item
 
 
 ! Apr 19, 2025 GHacks  (https://www.ghacks.net)
-www.ghacks.net##.ghacks-content > div:has-text(/ Previous Post/)
+www.ghacks.net##.ghacks-content >div:has-text(/ Previous Post/)
 www.ghacks.net##.mt--30.mb--20.heading--small:has-text(/Tutorials & Tips/)
 www.ghacks.net##div[class^="evergreen-posts"]
 !(/^[1-2][0-9][0-9][0-9])
@@ -379,7 +379,7 @@ medium.com##h2:has-text(/More from/):upward(4)
 www.nbcnews.com##div[data-testid="marqueeBreaking"]
 
 ! Apr 27, 2025 The Guardian (https://www.theguardian.com)
-www.theguardian.com##.dcr-b3fmmo > ul > li:has-text(/Latest updates/)
+www.theguardian.com##.dcr-b3fmmo >ul >li:has-text(/Latest updates/)
 
 ! Apr 28, 2025 Politico US (https://www.politico.com)
 www.politico.com##.hide-under-small.right-zone.center-vertically.container__column--story.container__column:has-text(/MOST READ/)
@@ -472,8 +472,8 @@ appleinsider.com##.main-page.row > .col-lg-3:has(div[class="sbr-spotlight"]):has
 ! May 5, 2025 New Delhi TV (https://www.ndtv.com)
 www.ndtv.com##.s-lf-wid:has-text(/Related News/):has(h3[class="s-ttl-clr"])
 www.ndtv.com##div[id~="matchPhase"]>.mini_score
-www.ndtv.com##.sp_lnk2 > strong:has-text(/Also Read|/)
-www.ndtv.com/world-news##div.--simple.--left.--hard.stf__item.bb-custom-side > [href^="https://sports.ndtv.com/cricket/srh-vs-dc-scorecard-live-cricket-score-ipl-2025-match-55-shdd05052025257269"]
+www.ndtv.com##.sp_lnk2 >strong:has-text(/Also Read|/)
+www.ndtv.com/world-news##div.--simple.--left.--hard.stf__item.bb-custom-side >[href^="https://sports.ndtv.com/cricket/srh-vs-dc-scorecard-live-cricket-score-ipl-2025-match-55-shdd05052025257269"]
 www.ndtv.com##.--landscape.stf__wrapper
 www.ndtv.com##.mini_cbe-cnt:has-text(/Match/)
 
@@ -548,7 +548,7 @@ www.turkiyetoday.com##.moreFromTurkiyeToday.fourBoxes
 theconversation.com##h3[class="slammed border"]:has-text(/You might also like/):upward(div):upward(div[class="react-content-related-container"])
 
 ! May 18, 2025 Bill O' Reilly (https://www.billoreilly.com)
-www.billoreilly.com###TICKER > table > tbody > tr > td
+www.billoreilly.com###TICKER >table >tbody >tr >td
 
 ! May 19, 2025 ABC News (https://abcnews.go.com)
 abcnews.go.com##div[data-testid="prism-GridColumn"][class^="theme-e FITT_Article_main__sidebar"]:has(h2):has-text(/Popular Reads/)
@@ -594,7 +594,7 @@ www.techspot.com##:matches-path(/news/) div[class=related-news]
 www.windowscentral.com,www.androidcentral.com,www.techradar.com,www.tomsguide.com##div[class="slice-container popular-box-slice popularBox slice-container-popularBox slice-hydrated"][id="slice-container-popularBox"]:upward(2)
 www.windowscentral.com,www.androidcentral.com,www.techradar.com,www.tomshardware.com##aside[data-component-name="Recirculation:ArticleRiver"]
 www.windowscentral.com,www.androidcentral.com,www.techradar.com,www.tomshardware.com##div[data-recirc-id="article-river-stacked-solr:latest-category"]
-www.windowscentral.com,www.androidcentral.com,www.techradar.com,www.tomshardware.com##aside > div[data-recirc-id="article-river-stacked-solr:latest-articletype"]
+www.windowscentral.com,www.androidcentral.com,www.techradar.com,www.tomshardware.com##aside >div[data-recirc-id="article-river-stacked-solr:latest-articletype"]
 !www.windowscentral.com,www.androidcentral.com,www.techradar.com##div[data-recirc-id="article-river-stacked-adviser:related"] 
 #Optional, as this is recommendations on same topic and can be useful, especially when it is useful guides.
 
