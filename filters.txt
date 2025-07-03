@@ -2,7 +2,7 @@
 ! Homepage: https://github.com/I-I-IT/News-debloat-anti-distractions/
 ! Description: uBlock Origin filter removing news websites features to keep you reading, including "Trending Topics", "top stories", etc.
 ! Version: July 06 2025
-! Expires: 6 days
+! Expires: 2 days
 
 !Make your links grey instead of blue (optional)
 !com,dev,io,net,org,gov,app,social,gist,tv,video,ai,me,blog##a:style(color: grey!important)
