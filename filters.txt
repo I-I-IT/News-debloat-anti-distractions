@@ -1,7 +1,7 @@
 ! Title: 📰 🗞️ News debloater 🧼
 ! Homepage: https://github.com/I-I-IT/News-debloat-anti-distractions/
 ! Description: uBlock Origin filter removing news websites features to keep you reading, including "Trending Topics", "top stories", etc.
-! Version: July 03 2025
+! Version: July 06 2025
 ! Expires: 6 days
 
 !Make your links grey instead of blue (optional)
@@ -106,6 +106,11 @@ apnews.com##.Page-aside
 !Both right-side bar of "To read" articles
 ||dims.apnews.com/dims4/default/*/*/strip/true/crop/*/resize/1440x960!/format/webp/quality/90/?url=*$image,1p
 ||https://api.parsely.com/v2/related?apikey=apnews.com&url=https://apnews.com/article/*
+apnews.com##a[id="more-business-news"]:upward(2)
+apnews.com##bsp-list-loadmore[data-parsely-title="Related Stories"]:upward(2)
+apnews.com##bsp-list-loadmore[data-gtm-topic="JWD-related"]
+apnews.com##div[class=Infobox][data-gtm-region*="Read more"]:has(span):has(a)
+
 
 ! Apr 1,7,24-May 15 2025 The Times (https://www.nytimes.com)
 !They seem to change the ids regularly
@@ -307,6 +312,12 @@ www.wired.com##figure[data-testid="cne-interlude-container"][class^="VideoFigure
 
 ! Apr 21, 2025 Bloomberg (https://www.bloomberg.com)
 www.bloomberg.com##.ContextualNav_slider__KvlEO.media-ui-Slider_isAtStart-n0WJnmO946M-
+www.bloomberg.com##:matches-path(/news/) div[data-component="breaking-news"]
+! 20 Jun 2025
+www.bloomberg.com##:matches-path(/news/) div[data-component="recirc"]
+www.bloomberg.com##th:has-text(/Read More:/):upward(table):upward(section)
+www.bloomberg.com##div[class^=stickyScroll_stickyContainer]
+
 
 ! NateSilver
 www.natesilver.net##h5:has-text(/See also:/)
@@ -315,11 +326,12 @@ www.natesilver.net##h5:has-text(/See also:/)
 www.theregister.com##.ticker_cta
 www.theregister.com##.similar_topics
 www.theregister.com##ul[class="listinks"]:matches-css-before(content: "MORE CONTEXT")
-www.theregister.com##div[id="story-bot-col"]:has(div[class="headlines"])
+www.theregister.com##div[id="story-bot-col"]:has(div[class="headlines"],div[class="keepreading"])
 www.theregister.com##dom_annotate_related_questions
-www.theregister.com##div[id=story-bot-col]:has(div[class="keepreading"])
 www.theregister.com##div[class=similar_topics]:upward(div[class^="https:\/\/www.theregister.com"])
 !www.theregister.com##ul[class="listinks"]:matches-css-before(content:"MORE CONTEXT")
+
+
 
 ! Apr 22, 2025 HuggingFace Blog
 huggingface.co##p:nth-of-type(7):has-text(/click to follow/)
@@ -420,17 +432,7 @@ www.techradar.com##.trending__wrapper
 www.techradar.com##.slice-container-trending.trendingbar.trending-bar-container.slice-container
 www.techradar.com##aside[data-component-name="Recirculation:ArticleRiver"]:has(span):has-text(/You may like/)
 
-! May 20, 2025 Tom's Hardware (https://www.tomshardware.com)
-www.tomshardware.com###article-body > aside[data-component-name="Recirculation:ArticleRiver"]
-www.tomshardware.com##div[data-recirc-id="article-river-stacked-adviser:related"]
-www.tomshardware.com##div[data-recirc-id="article-river-stacked-solr:latest-category"]
-www.tomshardware.com##div[data-recirc-id="article-river-stacked-solr:latest-articletype"]
 
-! 5 Jun 2025 Toms Guide https://www.tomsguide.com
-www.tomsguide.com##script[data-id="vanilla-slice-popularBox-hydrate"]
-www.tomsguide.com##div[class="slice-container popular-box-slice popularBox slice-container-popularBox slice-hydrated"]:has(section[class="popular-box"]):upward(2)
-www.tomsguide.com##div[data-recirc-id="article-river-stacked-adviser:related"]
-www.tomsguide.com##div[data-recirc-id="article-river-stacked-solr:latest-articletype"]
 
 ! May 1, 2025 BBC (https://www.bbc.co.uk)
 www.bbc.co.uk###topStories-label-aside-content:has-text(/Top stories/)
@@ -563,6 +565,8 @@ techreport.com##div[class="more-posts"]
 
 ! 28 May 2025 Forbes (https://www.forbes.com)
 www.forbes.com##a[class="embed-base color-body color-body-border link-embed embed-0"]
+www.forbes.com##div[class$=recirc-module]:has-text(/MORE FROM/)
+
 
 ! 28 May 2025 Russia Today, Russia state-media (https://www.rt.com)
 www.rt.com##a[class="link link_disabled"][href="/news/"]:upward(div[class="showDesktop"])
@@ -586,18 +590,23 @@ stackoverflow.blog##div[class$="row-wrap"]~div:has-text(/Recent articles/)
 www.techspot.com##div[class="sidebarContent"]:has(a[href="/trending/"])
 www.techspot.com##:matches-path(/news/) div[class=related-news]
 
-! 11 Jun 2025 Windows Central (https://www.windowscentral.com)
-www.windowscentral.com##div[class="slice-container popular-box-slice popularBox slice-container-popularBox slice-hydrated"][id="slice-container-popularBox"]
-www.windowscentral.com##aside[data-component-name="Recirculation:ArticleRiver"]
-www.windowscentral.com##div[data-recirc-id="article-river-stacked-solr:latest-category"]
-www.windowscentral.com##aside > div[data-recirc-id="article-river-stacked-solr:latest-articletype"]
-
-!www.windowscentral.com##div[data-recirc-id="article-river-stacked-adviser:related"] 
+! 11 Jun 2025 ... Central group (https://www.windowscentral.com)
+www.windowscentral.com,www.androidcentral.com,techradar.com,www.tomsguide.com##div[class="slice-container popular-box-slice popularBox slice-container-popularBox slice-hydrated"][id="slice-container-popularBox"]:upward(2)
+www.windowscentral.com,www.androidcentral.com,techradar.com,www.tomshardware.com##aside[data-component-name="Recirculation:ArticleRiver"]
+www.windowscentral.com,www.androidcentral.com,techradar.com,www.tomshardware.com##div[data-recirc-id="article-river-stacked-solr:latest-category"]
+www.windowscentral.com,www.androidcentral.com,techradar.com,www.tomshardware.com##aside > div[data-recirc-id="article-river-stacked-solr:latest-articletype"]
+!www.windowscentral.com,www.androidcentral.com,techradar.com##div[data-recirc-id="article-river-stacked-adviser:related"] 
 #Optional, as this is recommendations on same topic and can be useful, especially when it is useful guides.
 
-! 19 Jun 2025 https://www.euractiv.com
+! May 20, 2025 Tom's Hardware (https://www.tomshardware.com)
+www.tomshardware.com,www.tomsguide.com##div[data-recirc-id="article-river-stacked-adviser:related"]
+! 5 Jun 2025 Toms Guide https://www.tomsguide.com
+www.tomsguide.com##script[data-id="vanilla-slice-popularBox-hydrate"]
+www.tomsguide.com##div[data-recirc-id="article-river-stacked-solr:latest-articletype"]
 
+! 19 Jun 2025 https://www.euractiv.com
 www.euractiv.com##:matches-path("/section/") h2:has-text(/Most recent/m):upward(div)
+
 
 ! Yale Daily News, June 28 2025
 yaledailynews.com##div[class=article-sidebar]:has(div[class="most-read-title"])
@@ -617,3 +626,44 @@ electrek.co##div[class^="cross-site-feed featured-items ninetofive"]:upward(asid
 
 !Mozilla blog
 www.mozillafoundation.org##div[class="container d-print-none"]:has(div[class~="related-posts"]
+
+!ZDNet 
+
+www.zdnet.com##div[class~="c-pageArticleSingle_rightRail"]:has-text(/Related/i)
+www.zdnet.com##div[class~=c-pageArticleSingle_leftRail]:has(div[class~="c-globalBreakingNews"])
+www.zdnet.com##div[class="c-shortcodePinbox-carousel"]
+www.zdnet.com##div[class="c-seamlessTriggers"]+div[class="c-scrollPercent"]
+www.zdnet.com##strong:has-text(/^Also:/i):upward(p)
+www.zdnet.com##p:has(a[href^="https://www.zdnet.com/newsletters/"]):has(em)
+
+!Bleeping computer
+www.bleepingcomputer.com##:matches-path(/news/) div[id=pop_stories]
+www.bleepingcomputer.com##:matches-path(news) div
+
+!VICE
+www.vice.com##section[class^="wp-block-group more-like-this"]
+www.vice.com##div[class~="wp-block-template-part--more-from-vice"]
+
+!Baker library
+www.library.hbs.edu##div[class="hbs-article-footer"]+div[class="hbs-article__extra-content"]
+
+!The Debrief
+thedebrief.org##div[class="inline-post clearfix"]:has-text(/See Also/)
+
+
+!The Swaddle
+www.theswaddle.com##section+section:has-text(/Related/)
+
+!Scientific American
+www.scientificamerican.com##aside[class^="readThisNext-"]
+www.scientificamerican.com##article~div[class^=articleList]
+
+!Amnesty Internation (all websites)
+www.amnesty.*##div[class="src-client-components-LinkedContentList-__LinkedContentList-module___LinkedContentList"]
+
+!E-flux journal
+||e-flux.com/v2/api/related
+www.e-flux.com##div[class="journalarticle__next"]
+
+!Bruegel think-thank
+www.bruegel.org##section[class$=o-section--related-content]
