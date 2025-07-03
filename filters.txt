@@ -1,7 +1,7 @@
 ! Title: 📰 🗞️ News debloater 🧼
 ! Homepage: https://github.com/I-I-IT/News-debloat-anti-distractions/
 ! Description: uBlock Origin filter removing news websites features to keep you reading, including "Trending Topics", "top stories", etc.
-! Version: June 28 2025
+! Version: July 03 2025
 ! Expires: 6 days
 
 !Make your links grey instead of blue (optional)
@@ -116,7 +116,7 @@ www.nytimes.com##.css-ew4tgv
 www.nytimes.com##div[aria-labelledby^="storyline-latest-updates"]:has-text(/Live Updates/)
 www.nytimes.com##h3[id=more-in-europe-section]:upward(div):upward(section)
 www.nytimes.com##div[data-testid^=RelatedLinksBlock]
-www.nytimes.com##:matches-path(/^/$/)video[data-testid="cinemagraph"][class~="cinemagraph_video"]:upward(div)
+www.nytimes.com##:matches-path(/^/$/) video[data-testid="cinemagraph"][class~="cinemagraph_video"]:upward(div)
 !GIF videos on NYT homepage are getting aggresive and out of control. This hides them. This doesn't affect potential normal videos on homepage.
 www.nytimes.com##section[data-testid="related_content"]
 www.nytimes.com##video[data-testid="cinemagraph"][class~="cinemagraph_video"]:upward(div)
@@ -584,7 +584,7 @@ stackoverflow.blog##div[class$="row-wrap"]~div:has-text(/Recent articles/)
 
 ! 10 Jun 2025 TechSpot (https://www.techspot.com)
 www.techspot.com##div[class="sidebarContent"]:has(a[href="/trending/"])
-www.techspot.com##:matches-path(/news/)div[class=related-news]
+www.techspot.com##:matches-path(/news/) div[class=related-news]
 
 ! 11 Jun 2025 Windows Central (https://www.windowscentral.com)
 www.windowscentral.com##div[class="slice-container popular-box-slice popularBox slice-container-popularBox slice-hydrated"][id="slice-container-popularBox"]
@@ -597,7 +597,7 @@ www.windowscentral.com##aside > div[data-recirc-id="article-river-stacked-solr:l
 
 ! 19 Jun 2025 https://www.euractiv.com
 
-www.euractiv.com##:matches-path("/section/")h2:has-text(/Most recent/m):upward(div)
+www.euractiv.com##:matches-path("/section/") h2:has-text(/Most recent/m):upward(div)
 
 ! Yale Daily News, June 28 2025
 yaledailynews.com##div[class=article-sidebar]:has(div[class="most-read-title"])
