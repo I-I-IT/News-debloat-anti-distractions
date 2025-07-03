@@ -591,11 +591,11 @@ www.techspot.com##div[class="sidebarContent"]:has(a[href="/trending/"])
 www.techspot.com##:matches-path(/news/) div[class=related-news]
 
 ! 11 Jun 2025 ... Central group (https://www.windowscentral.com)
-www.windowscentral.com,www.androidcentral.com,techradar.com,www.tomsguide.com##div[class="slice-container popular-box-slice popularBox slice-container-popularBox slice-hydrated"][id="slice-container-popularBox"]:upward(2)
-www.windowscentral.com,www.androidcentral.com,techradar.com,www.tomshardware.com##aside[data-component-name="Recirculation:ArticleRiver"]
-www.windowscentral.com,www.androidcentral.com,techradar.com,www.tomshardware.com##div[data-recirc-id="article-river-stacked-solr:latest-category"]
-www.windowscentral.com,www.androidcentral.com,techradar.com,www.tomshardware.com##aside > div[data-recirc-id="article-river-stacked-solr:latest-articletype"]
-!www.windowscentral.com,www.androidcentral.com,techradar.com##div[data-recirc-id="article-river-stacked-adviser:related"] 
+www.windowscentral.com,www.androidcentral.com,www.techradar.com,www.tomsguide.com##div[class="slice-container popular-box-slice popularBox slice-container-popularBox slice-hydrated"][id="slice-container-popularBox"]:upward(2)
+www.windowscentral.com,www.androidcentral.com,www.techradar.com,www.tomshardware.com##aside[data-component-name="Recirculation:ArticleRiver"]
+www.windowscentral.com,www.androidcentral.com,www.techradar.com,www.tomshardware.com##div[data-recirc-id="article-river-stacked-solr:latest-category"]
+www.windowscentral.com,www.androidcentral.com,www.techradar.com,www.tomshardware.com##aside > div[data-recirc-id="article-river-stacked-solr:latest-articletype"]
+!www.windowscentral.com,www.androidcentral.com,www.techradar.com##div[data-recirc-id="article-river-stacked-adviser:related"] 
 #Optional, as this is recommendations on same topic and can be useful, especially when it is useful guides.
 
 ! May 20, 2025 Tom's Hardware (https://www.tomshardware.com)
