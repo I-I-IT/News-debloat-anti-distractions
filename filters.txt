@@ -419,17 +419,6 @@ substack.com##div[data-component-name=InstallSubstackAppToDOM]
 ! Apr 30, 2025 https://www.sparknotes.com
 www.sparknotes.com##.tag--interior-right-rail-blog.most-viewed-blogs
 
-! May 1, 2025 Tech Radar (https://www.techradar.com)
-www.techradar.com##div[data-recirc-id="article-river-stacked-adviser:related"]:has-text(/Read more/)
-www.techradar.com##div[data-recirc-id^="article-river-stacked-solr:latest-"]
-www.techradar.com##h3#section-you-might-also-like
-www.techradar.com##h3#section-you-may-also-like + ul
-www.techradar.com##h3#section-you-might-also-like
-www.techradar.com##.trending__nav
-www.techradar.com##.trending__list
-www.techradar.com##.trending__wrapper
-www.techradar.com##.slice-container-trending.trendingbar.trending-bar-container.slice-container
-www.techradar.com##aside[data-component-name="Recirculation:ArticleRiver"]:has(span):has-text(/You may like/)
 
 
 
@@ -597,6 +586,18 @@ www.windowscentral.com,www.androidcentral.com,www.techradar.com,www.tomshardware
 !www.windowscentral.com,www.androidcentral.com,www.techradar.com##div[data-recirc-id="article-river-stacked-adviser:related"] 
 #Optional, as this is recommendations on same topic and can be useful, especially when it is useful guides.
 
+! May 1, 2025 Tech Radar (https://www.techradar.com)
+www.techradar.com##:matches-path(/[a-z]+/) div[data-recirc-id="article-river-stacked-adviser:related"]
+www.techradar.com##div[data-recirc-id^="article-river-stacked-solr:latest-"]
+www.techradar.com##h3#section-you-might-also-like
+www.techradar.com##h3#section-you-may-also-like + ul
+www.techradar.com##h3#section-you-might-also-like
+www.techradar.com##.trending__nav
+www.techradar.com##.trending__list
+www.techradar.com##.trending__wrapper
+www.techradar.com##.slice-container-trending.trendingbar.trending-bar-container.slice-container
+www.techradar.com##:matches-path(/[a-z]+/) aside[data-component-name="Recirculation:ArticleRiver"]:has(span)
+
 ! 12 Jun 2025 https://www.androidpolice.com
 www.androidpolice.com##div[data-active-tab="trendingNow"][class="sidebar-tab"][data-is-tab-container="true"]
 www.androidpolice.com##article[class="sidebar-tabs"]
@@ -634,7 +635,7 @@ www.mozillafoundation.org##div[class="container d-print-none"]:has(div[class~="r
 
 !ZDNet 
 
-www.zdnet.com##div[class~="c-pageArticleSingle_rightRail"]:has-text(/Related/i)
+www.zdnet.com##:matches-path(/article|/home-and-office) div[class~="c-pageArticleSingle_rightRail"]
 www.zdnet.com##div[class~=c-pageArticleSingle_leftRail]:has(div[class~="c-globalBreakingNews"])
 www.zdnet.com##div[class="c-shortcodePinbox-carousel"]
 www.zdnet.com##div[class="c-seamlessTriggers"]+div[class="c-scrollPercent"]
@@ -642,7 +643,7 @@ www.zdnet.com##strong:has-text(/^Also:/i):upward(p)
 www.zdnet.com##p:has(a[href^="https://www.zdnet.com/newsletters/"]):has(em)
 
 !Bleeping computer
-www.bleepingcomputer.com##:matches-path(/news/) div[id=pop_stories]
+www.bleepingcomputer.com##:matches-path(/news) div[id=pop_stories]
 www.bleepingcomputer.com##:matches-path(news) div
 
 !VICE
