@@ -421,8 +421,7 @@ www.sparknotes.com##.tag--interior-right-rail-blog.most-viewed-blogs
 
 ! May 1, 2025 Tech Radar (https://www.techradar.com)
 www.techradar.com##div[data-recirc-id="article-river-stacked-adviser:related"]:has-text(/Read more/)
-www.techradar.com##div[data-recirc-id="article-river-stacked-solr:latest-articletype"|data-recirc-id="article-river-stacked-solr:latest-category"]
-www.techradar.com##h3#section-you-might-also-like + ul
+www.techradar.com##div[data-recirc-id^="article-river-stacked-solr:latest-"]
 www.techradar.com##h3#section-you-might-also-like
 www.techradar.com##h3#section-you-may-also-like + ul
 www.techradar.com##h3#section-you-might-also-like
@@ -538,7 +537,7 @@ www.themoscowtimes.com##.next-article-loader.container
 
 ! May 17, 2025 The Independent (https://www.the-independent.com)
 www.the-independent.com,independent.co.uk##aside[class$="sidebar"]:has-text(/Read Next/):has-text(/Popular videos/)
-www.independent.co.uk,##aside:has(div[data-component="MostPopularFeedList"])
+www.independent.co.uk##aside:has(div[data-component="MostPopularFeedList"])
 
 
 ! May 17, 2025 Turkey Today (https://www.turkiyetoday.com)
@@ -631,7 +630,7 @@ www.psychologytoday.com##div[id^=block-blogentrymorefrom]
 electrek.co##div[class^="cross-site-feed featured-items ninetofive"]:upward(aside)
 
 !Mozilla blog
-www.mozillafoundation.org##div[class="container d-print-none"]:has(div[class~="related-posts"]
+www.mozillafoundation.org##div[class="container d-print-none"]:has(div[class~="related-posts"])
 
 !ZDNet 
 
