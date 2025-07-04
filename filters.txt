@@ -2,10 +2,10 @@
 ! Homepage: https://github.com/I-I-IT/News-sidebard-and-related-article-remover
 ! Description: uBlock Origin filter removing news websites features to keep you reading, including "Trending Topics", "top stories", etc.
 ! Version: June 08 2025
-! Expires: 6 days
+! Expires: 3 days
 
 !Make your links grey instead of blue (optional)
-!com,dev,io,net,org,gov,app,social,gist,tv,video,ai,me,blog##a:style(color: grey!important)
+!com,dev,io,net,org,gov,app,social,gist,tv,video,ai,me,blog,tech##a:style(color: grey!important)
 
 ! Apr 18, 2025 Bluesky  (https://bsky.app)
 !trending topics
@@ -138,6 +138,7 @@ www.wsj.com##div[aria-label="What To Read Next"][data-block="doNotPrint"]
 www.wsj.com##a[href="https://www.wsj.com/buyside/?mod=wsj_article_buy_widget"]:upward(5)
 www.wsj.com##div[aria-label="Most Popular Opinion"][role="complementary"]
 www.wsj.com##h4:has-text(/SHARE YOUR THOUGHTS/m):upward(div[data-inset_type="richtext"])
+wsj.com##a:style(border-bottom: 0px!important)
 
 
 
@@ -311,6 +312,7 @@ www.theregister.com##.ticker_cta
 www.theregister.com##.similar_topics
 www.theregister.com##ul[class="listinks"]:matches-css-before(content: "MORE CONTEXT")
 www.theregister.com##div[id="story-bot-col"]:has(div[class="headlines"])
+www.theregister.com##:matches-path(/20\d\d/)div[class="promo_article"]
 
 ! Apr 22, 2025 HuggingFace Blog
 huggingface.co##p:nth-of-type(7):has-text(/click to follow/)
@@ -580,3 +582,9 @@ www.windowscentral.com##aside > div[data-recirc-id="article-river-stacked-solr:l
 
 !www.windowscentral.com##div[data-recirc-id="article-river-stacked-adviser:related"] 
 #Optional, as this is recommendations on same topic and can be useful, especially when it is useful guides.
+
+! 12 Jun 2025 https://www.androidpolice.com
+www.androidpolice.com##div[data-active-tab="trendingNow"][class="sidebar-tab"][data-is-tab-container="true"]
+www.androidpolice.com##article[class="sidebar-tabs"]
+www.androidpolice.com##div[class^="display-card  article article-card small"]:has(span[data-field="label"]:has-text(/Related/))
+www.androidpolice.com##div[class=footer-recommended-feed]

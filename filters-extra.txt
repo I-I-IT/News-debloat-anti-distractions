@@ -1,0 +1,18 @@
+! Title: Distractions remover
+! Description: Removing recommendations outside news websites as well.
+! Version: June 18 2025
+! Expires: 6 days
+
+
+!Forums with recommendations at the end of the thread. remove it
+discuss.privacyguides.net,discussion.fedoraproject.org,discuss.techlore.tech,discourse.ubuntu.com##:matches-path(/t/).more-topics__container
+!Following discourse forums do not have those recommendations (good) discussion.grapheneos.org, forums.opensuse.org
+!Following non-discourse forums : forums.linuxmint.com, bbs.archlinux.org
+
+
+! 30 May 2025 https://stackoverflow.com
+stackoverflow.com,askubuntu.com##.is-visible.fs-body1.wmn3.s-popover
+stackoverflow.com,askubuntu.com,stackexchange.com##div[class="module sidebar-related"]
+! 17 Jun 2025 https://worldbuilding.stackexchange.com
+stackexchange.com,stackoverflow.com##:matches-path(/questions/)ul[class~=s-sidebarwidget--content]
+stackexchange.com,stackoverflow.com###inline_related_var_a_less
