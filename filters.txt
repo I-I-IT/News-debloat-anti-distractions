@@ -83,11 +83,14 @@ techcrunch.com##div[class="wp-block-template-part wp-block-template-part--sideba
 
 
 ! Apr 3, 2025 MSN (https://www.msn.com)
-www.msn.com###ViewsPageId-AA1Ces5n > .consumption-page-feed-wrapper
 www.msn.com###div[class^="consumption-feed-content"]
 www.msn.com###cs-feed-layout
 www.msn.com##cs-personalized-feed
 www.msn.com##div[class="consumption-page-feed-wrapper"]
+www.msn.com##div[class~="consumption-page"]:matches-attr(data-clarity-region="/article[2-9]/")
+!Removes extra articles after the first one
+www.msn.com##div[class="intra-article-relatedcontent"]
+!Removes related video (inserted by MSN not even from the publisher. Videos inserted by publisher still working).
 
 ! Apr 6, 2025 The Verge (https://www.theverge.com)
 www.theverge.com##.n5bh2k5 > .mq7s702.duet--layout--header-pattern
