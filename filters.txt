@@ -635,7 +635,7 @@ www.mozillafoundation.org##div[class="container d-print-none"]:has(div[class~="r
 
 !ZDNet 
 
-www.zdnet.com##:matches-path(/article|/home-and-office) div[class~="c-pageArticleSingle_rightRail"]
+www.zdnet.com##:matches-path(/article|home-and-office/) div[class~="c-pageArticleSingle_rightRail"]
 www.zdnet.com##div[class~=c-pageArticleSingle_leftRail]:has(div[class~="c-globalBreakingNews"])
 www.zdnet.com##div[class="c-shortcodePinbox-carousel"]
 www.zdnet.com##div[class="c-seamlessTriggers"]+div[class="c-scrollPercent"]
@@ -644,7 +644,6 @@ www.zdnet.com##p:has(a[href^="https://www.zdnet.com/newsletters/"]):has(em)
 
 !Bleeping computer
 www.bleepingcomputer.com##:matches-path(/news) div[id=pop_stories]
-www.bleepingcomputer.com##:matches-path(news) div
 
 !VICE
 www.vice.com##section[class^="wp-block-group more-like-this"]
@@ -654,8 +653,7 @@ www.vice.com##div[class~="wp-block-template-part--more-from-vice"]
 www.library.hbs.edu##div[class="hbs-article-footer"]+div[class="hbs-article__extra-content"]
 
 !The Debrief
-thedebrief.org##div[class="inline-post clearfix"]:has-text(/See Also/)
-
+thedebrief.org##div[class="inline-post clearfix"]:has(article[class^="preview-thumbnail split ani-base"])
 
 !The Swaddle
 www.theswaddle.com##section+section:has-text(/Related/)
