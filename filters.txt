@@ -83,11 +83,14 @@ techcrunch.com##div[class="wp-block-template-part wp-block-template-part--sideba
 
 
 ! Apr 3, 2025 MSN (https://www.msn.com)
-www.msn.com###ViewsPageId-AA1Ces5n > .consumption-page-feed-wrapper
 www.msn.com###div[class^="consumption-feed-content"]
 www.msn.com###cs-feed-layout
 www.msn.com##cs-personalized-feed
 www.msn.com##div[class="consumption-page-feed-wrapper"]
+www.msn.com##div[class~="consumption-page"]:matches-attr(data-clarity-region="/article[2-9]/")
+!Removes extra articles after the first one
+www.msn.com##div[class="intra-article-relatedcontent"]
+!Removes related video (inserted by MSN not even from the publisher. Videos inserted by publisher still working).
 
 ! Apr 6, 2025 The Verge (https://www.theverge.com)
 www.theverge.com##.n5bh2k5 > .mq7s702.duet--layout--header-pattern
@@ -465,9 +468,18 @@ www.ndtv.com/world-news##div.--simple.--left.--hard.stf__item.bb-custom-side >[h
 www.ndtv.com##.--landscape.stf__wrapper
 www.ndtv.com##.mini_cbe-cnt:has-text(/Match/)
 
-! May 5, 2025 9to5 Mac (https://9to5mac.com)
-9to5mac.com/20__##article:not([id="opened"])
+! May 5, 2025 9to5 group
+9to5linux.com,9to5mac.com,9to5google.com,dronedj.com,spaceexplored.com,electrek.co##:matches-path(/[d+]/)article:not([id="opened"])
 !This prevents infinite scrolling- will not work if article doesn't have the format yyyy/... (necessary because if not homepage breaks)
+!Might 
+9to5linux.com,9to5mac.com,9to5google.com,dronedj.com,spaceexplored.com,electrek.co##div[class^="cross-site-feed featured-items ninetofive"]:upward(aside)
+9to5linux.com,9to5mac.com,9to5google.com,dronedj.com,spaceexplored.com,electrek.co##div[id^="infinite-view-"][class^="infinite-wrap infinite-view-"]
+9to5linux.com,9to5mac.com,9to5google.com,dronedj.com,spaceexplored.com,electrek.co##aside[class^="sidebar container"]:has(div[class="featured-items"])
+
+
+
+
+
 
 ! May 5, 2025  The New Yorker (https://www.newyorker.com)
 www.newyorker.com##div[data-testid="ContentFooterBottom"]:has-text(/Read More/):has(header)
@@ -626,9 +638,6 @@ www.haaretz.com##h2:has-text(/Trending Now/):upward(div)+div
 www.psychologytoday.com##aside[class="layout-content-right-rail"][role="complementary"]
 www.psychologytoday.com##div[id^=block-blogentrymorefrom]
 
-!Electrek
-
-electrek.co##div[class^="cross-site-feed featured-items ninetofive"]:upward(aside)
 
 !Mozilla blog
 www.mozillafoundation.org##div[class="container d-print-none"]:has(div[class~="related-posts"])
