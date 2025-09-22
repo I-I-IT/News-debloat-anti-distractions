@@ -685,3 +685,13 @@ www.bruegel.org##section[class$=o-section--related-content]
 ! Sep 22, 2025 https://www.businessinsider.com
 www.businessinsider.com##.standard.related-posts.at-post-bottom.dad-related-posts-component
 
+! 23 Sept 2025 https://uk.news.yahoo.com
+yahoo.com##div[class="inline-block pl-1 pr-2 text-sm font-bold md:pl-2 md:pr-3 md:text-lg"]:has-text(/Up next/):upward(2)+div
+yahoo.com##div[class*="md:grid-cols-article-stream"]:has-text(/Recommended articles/)
+!Has-text() not strictly necessary, putting it as aubundance of caution for Yahoo Mail users.
+yahoo.com##h3[id="read-more"]+ul
+yahoo.com##h3[id="read-more"]
+
+
+||yahoo.com/caas/content/article/dataApi/?appid=news_web&features=noRapidClickClass,siteSections,isSeamlessArticle*$script,xhr,domain=yahoo.com
+!Network filters for extra articles.
