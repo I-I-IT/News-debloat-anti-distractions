@@ -680,3 +680,8 @@ www.e-flux.com##div[class="journalarticle__next"]
 
 !Bruegel think-thank
 www.bruegel.org##section[class$=o-section--related-content]
+
+
+! Sep 22, 2025 https://www.businessinsider.com
+www.businessinsider.com##.standard.related-posts.at-post-bottom.dad-related-posts-component
+
