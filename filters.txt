@@ -124,7 +124,7 @@ www.nytimes.com##.css-ew4tgv
 www.nytimes.com##div[aria-labelledby^="storyline-latest-updates"]:has-text(/Live Updates/)
 www.nytimes.com##h3[id=more-in-europe-section]:upward(div):upward(section)
 www.nytimes.com##div[data-testid^=RelatedLinksBlock]
-www.nytimes.com##:matches-path(/^/$/) video[data-testid="cinemagraph"][class~="cinemagraph_video"]:upward(div)
+www.nytimes.com##video[data-testid="cinemagraph"][class~="cinemagraph_video"]:upward(div)
 !GIF videos on NYT homepage are getting aggresive and out of control. This hides them. This doesn't affect potential normal videos on homepage.
 www.nytimes.com##section[data-testid="related_content"]
 www.nytimes.com##video[data-testid="cinemagraph"][class~="cinemagraph_video"]:upward(div)
@@ -334,7 +334,7 @@ www.theregister.com##div[id="story-bot-col"]:has(div[class="headlines"],div[clas
 www.theregister.com##dom_annotate_related_questions
 www.theregister.com##div[class=similar_topics]:upward(div[class^="https:\/\/www.theregister.com"])
 !www.theregister.com##ul[class="listinks"]:matches-css-before(content:"MORE CONTEXT")
-www.theregister.com##:matches-path(/20\d\d/) div[class="promo_article"]
+www.theregister.com##div[class="promo_article"]
 
 ! Apr 22, 2025 HuggingFace Blog
 huggingface.co##p:nth-of-type(7):has-text(/click to follow/)
@@ -469,7 +469,8 @@ www.ndtv.com##.--landscape.stf__wrapper
 www.ndtv.com##.mini_cbe-cnt:has-text(/Match/)
 
 ! May 5, 2025 9to5 group
-9to5linux.com,9to5mac.com,9to5google.com,dronedj.com,spaceexplored.com,electrek.co##:matches-path(/[d+]/)article:not([id="opened"])
+9to5linux.com,9to5mac.com,9to5google.com,dronedj.com,spaceexplored.com,electrek.co##:matches-path(/[d+]/)article:not([id="opened"]) 
+!Note: this matches-path is important to keep
 !This prevents infinite scrolling- will not work if article doesn't have the format yyyy/... (necessary because if not homepage breaks)
 !Might 
 9to5linux.com,9to5mac.com,9to5google.com,dronedj.com,spaceexplored.com,electrek.co##div[class^="cross-site-feed featured-items ninetofive"]:upward(aside)
@@ -588,7 +589,7 @@ stackoverflow.blog##div[class$="row-wrap"]~div:has-text(/Recent articles/)
 
 ! 10 Jun 2025 TechSpot (https://www.techspot.com)
 www.techspot.com##div[class="sidebarContent"]:has(a[href="/trending/"])
-www.techspot.com##:matches-path(/news/) div[class=related-news]
+www.techspot.com##div[class=related-news]
 
 ! 11 Jun 2025 ... Central group (https://www.windowscentral.com)
 www.windowscentral.com,www.androidcentral.com,www.techradar.com,www.tomsguide.com##div[class="slice-container popular-box-slice popularBox slice-container-popularBox slice-hydrated"][id="slice-container-popularBox"]:upward(2)
@@ -599,7 +600,7 @@ www.windowscentral.com,www.androidcentral.com,www.techradar.com,www.tomshardware
 #Optional, as this is recommendations on same topic and can be useful, especially when it is useful guides.
 
 ! May 1, 2025 Tech Radar (https://www.techradar.com)
-www.techradar.com##:matches-path(/[a-z]+/) div[data-recirc-id="article-river-stacked-adviser:related"]
+www.techradar.com##div[data-recirc-id="article-river-stacked-adviser:related"]
 www.techradar.com##div[data-recirc-id^="article-river-stacked-solr:latest-"]
 www.techradar.com##h3#section-you-might-also-like
 www.techradar.com##h3#section-you-may-also-like + ul
@@ -608,7 +609,7 @@ www.techradar.com##.trending__nav
 www.techradar.com##.trending__list
 www.techradar.com##.trending__wrapper
 www.techradar.com##.slice-container-trending.trendingbar.trending-bar-container.slice-container
-www.techradar.com##:matches-path(/[a-z]+/) aside[data-component-name="Recirculation:ArticleRiver"]:has(span)
+www.techradar.com##aside[data-component-name="Recirculation:ArticleRiver"]:has(span)
 
 ! 12 Jun 2025 https://www.androidpolice.com
 www.androidpolice.com##div[data-active-tab="trendingNow"][class="sidebar-tab"][data-is-tab-container="true"]
@@ -624,6 +625,7 @@ www.tomsguide.com##div[data-recirc-id="article-river-stacked-solr:latest-article
 
 ! 19 Jun 2025 https://www.euractiv.com
 www.euractiv.com##:matches-path("/section/") h2:has-text(/Most recent/m):upward(div)
+!Most recent also on homescreen, so matches-path is justified
 
 
 ! Yale Daily News, June 28 2025
@@ -644,7 +646,8 @@ www.mozillafoundation.org##div[class="container d-print-none"]:has(div[class~="r
 
 !ZDNet 
 
-www.zdnet.com##:matches-path(/article|home-and-office/) div[class~="c-pageArticleSingle_rightRail"]
+www.zdnet.com##div[class~="c-pageArticleSingle_rightRail"]
+!Removed matches-path((/article|home-and-office/), no apparent breaking. (Leaving comment in case of breaking)
 www.zdnet.com##div[class~=c-pageArticleSingle_leftRail]:has(div[class~="c-globalBreakingNews"])
 www.zdnet.com##div[class="c-shortcodePinbox-carousel"]
 www.zdnet.com##div[class="c-seamlessTriggers"]+div[class="c-scrollPercent"]
@@ -653,6 +656,7 @@ www.zdnet.com##p:has(a[href^="https://www.zdnet.com/newsletters/"]):has(em)
 
 !Bleeping computer
 www.bleepingcomputer.com##:matches-path(/news) div[id=pop_stories]
+!This matches-path important to keep, as it is used for the Popular Stories on the homepage.
 
 !VICE
 www.vice.com##section[class^="wp-block-group more-like-this"]
@@ -691,7 +695,15 @@ yahoo.com##div[class*="md:grid-cols-article-stream"]:has-text(/Recommended artic
 !Has-text() not strictly necessary, putting it as aubundance of caution for Yahoo Mail users.
 yahoo.com##h3[id="read-more"]+ul
 yahoo.com##h3[id="read-more"]
+www.yahoo.com##div[class="mb-4"]:has(div[id^="recirc"])
+www.yahoo.com##div[id="topic-subnav"]
 
 
 ||yahoo.com/caas/content/article/dataApi/?appid=news_web&features=noRapidClickClass,siteSections,isSeamlessArticle*$script,xhr,domain=yahoo.com
 !Network filters for extra articles.
+
+
+! 23 Oct 2025 https://www.theatlantic.com
+www.theatlantic.com##div [class^="ArticleRelatedContentModule"]
+www.theatlantic.com##aside[class="callout"]
+www.theatlantic.com##div[class^="ArticleFooterRecirc_root"]
