@@ -4,10 +4,10 @@
 
 ### Add the list
 
-[Subscribe here for uBlock Origin](https://subscribe.adblockplus.org/?location=https://raw.githubusercontent.com/I-I-IT/News-sidebard-and-related-article-remover/refs/heads/main/filters.txt&title=News_debloater)
+[Subscribe here for uBlock Origin](https://subscribe.adblockplus.org/?location=https://raw.githubusercontent.com/I-I-IT/News-debloat-anti-distractions/refs/heads/main/filters.txt)
 
 If it doesn't work, you can add the following link to your extension (only uBlock Origin on Firefox will work for all filters):
-[https://raw.githubusercontent.com/I-I-IT/News-sidebard-and-related-article-remover/refs/heads/main/filters.txt](https://raw.githubusercontent.com/I-I-IT/News-sidebard-and-related-article-remover/refs/heads/main/filters.txt)
+[https://raw.githubusercontent.com/I-I-IT/News-debloat-anti-distractions/refs/heads/main/filters.txt](https://raw.githubusercontent.com/I-I-IT/News-debloat-anti-distractions/refs/heads/main/filters.txt)
 uBlock Origin filter removing news websites features to keep you reading, including "Trending Topics", "top stories", etc.
 
 ### Compatibility:
