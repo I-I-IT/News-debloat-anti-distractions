@@ -65,11 +65,12 @@ www.reuters.com##div[class^="regular-article-layout__related__"]
 www.reuters.com##div[class^="single-column-article-layout__related__"]
 www.reuters.com##div[class^=regular-article-layout__right-rail__]
 
-! Apr 1-18, 2025 The Economist https://www.economist.com
-www.economist.com##.ekf19570.css-mqgbir
+! 6 Nov 2025 https://www.economist.com
 ||www.economist.com/engassets/_next/static/chunks/pages/article$script,domain=www.economist.com
-www.economist.com##div[data-optimizely^="related-articles-section"]:has-text(/More from/)
-www.economist.com##.ei4jjge0.css-ra48xw
+nytimes.com/vi-assets/static-assets/related-coverage-chunk-*.js
+!Test for this rule
+www.economist.com##div[class~="related-content"]
+www.economist.com##div[data-visual-test="removed"]:has(div[data-testid="morefrom-sectionheader"])
 
 ! Apr 1,7,28 2025 TechCrunch (https://techcrunch.com)
 ||jac.yahoosandbox.com/2.0.0/safeframe.html$subdocument
