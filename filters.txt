@@ -32,6 +32,11 @@ www.washingtonpost.com##.grid-rail
 www.washingtonpost.com##div[aria-roledescription="carousel"]:has-text(/Follow live updates/)
 www.washingtonpost.com##div[class$=type-topic-follow-interstitial] 
 !Annoying "Follow Topic" 
+!Below I remove AI bloat from Washington Post
+www.washingtonpost.com##a[aria-controls="ask-the-post-drawer"] > div > button
+www.washingtonpost.com##p[class="atp-text"]:style(text-decoration-line: none !important)
+www.washingtonpost.com##a[aria-controls="ask-the-post-drawer"]:style(text-decoration :none !important)
+
 
 ! Jan 29 - Feb 20, 2025 Aljazeera english (https://www.aljazeera.com)
 www.aljazeera.com##.more-on
