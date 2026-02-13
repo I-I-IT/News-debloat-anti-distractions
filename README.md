@@ -1,4 +1,6 @@
-# News debloater (anti-attention seekers)
+# News debloat
+
+** Because you should choose what you want to read, not being tubed with recommendations **
 
 ## Removes sidebar articles and other "recommended articles"
 
