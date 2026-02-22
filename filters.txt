@@ -316,6 +316,8 @@ kyivindependent.com##.mostPopular__wrapper
 kyivindependent.com##:matches-path(/[\w\-]{4}/) div[class^="MostPopularList_wrapper__"]
 kyivindependent.com##:matches-path(/[\w\-]{4}/) div[class^="EditorsPicks_wrapper__"]
 kyivindependent.com##:matches-path(/[\w\-]{4}/) div[class^="NewsFeedSide_wrapper___"]
+kyivindependent.com##.isPost.home__feedLayout
+
 
 ! Apr 21, 2025 Wired (https://www.wired.com)
 www.wired.com##.hide-read-more-ad
@@ -636,6 +638,9 @@ www.tomsguide.com##div[data-recirc-id="article-river-stacked-solr:latest-article
 ! 19 Jun 2025 https://www.euractiv.com
 www.euractiv.com##:matches-path("/section/") h2:has-text(/Most recent/m):upward(div)
 !Most recent also on homescreen, so matches-path is justified
+! 22 Feb 2026 https://www.euractiv.com
+www.euractiv.com##div[class~="c-wrapper__sidebar"] :matches-path(/news)
+www.euractiv.com##div[class^="c-wrapper mt-4"]:has(section[class="c-news-wrapper"])
 
 
 ! Yale Daily News, June 28 2025
@@ -717,3 +722,7 @@ www.yahoo.com##div[id="topic-subnav"]
 www.theatlantic.com##div [class^="ArticleRelatedContentModule"]
 www.theatlantic.com##aside[class="callout"]
 www.theatlantic.com##div[class^="ArticleFooterRecirc_root"]
+
+! 29 Jan 2026 https://www.livemint.com
+||www.livemint.com/lm-img/web.gif$image
+!Annoying flashing GIF
