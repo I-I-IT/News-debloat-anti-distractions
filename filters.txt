@@ -713,7 +713,6 @@ yahoo.com##h3[id="read-more"]
 www.yahoo.com##div[class="mb-4"]:has(div[id^="recirc"])
 www.yahoo.com##div[id="topic-subnav"]
 
-
 ||yahoo.com/caas/content/article/dataApi/?appid=news_web&features=noRapidClickClass,siteSections,isSeamlessArticle*$script,xhr,domain=yahoo.com
 !Network filters for extra articles.
 
@@ -726,3 +725,6 @@ www.theatlantic.com##div[class^="ArticleFooterRecirc_root"]
 ! 29 Jan 2026 https://www.livemint.com
 ||www.livemint.com/lm-img/web.gif$image
 !Annoying flashing GIF
+
+! 22 Feb 2026 https://www.cnbc.com
+www.cnbc.com##div[class="SidebarArticle-sidebar PageBuilder-sidebar"]:matches-path(/\d{4}/)
