@@ -232,6 +232,11 @@ www.cbc.ca##.story >ul:has(li):has(a)
 
 ! Apr 18, 2025 Financial Times (https://www.ft.com)
 www.ft.com##.o-grid-container.onward-journey__content
+www.ft.com##aside.n-content-recommended--inset.n-content-recommended--single-story
+! 22 Dec 2025 https://www.ft.com
+www.ft.com##div[class="epaper__hero--right-big"]
+www.ft.com##div[class="epaper__hero--left-big"]:style(min-width:85% !important;max-width:99% !important)
+
 
 ! Apr 18, 2025  USA Today (https://usatoday.com)
 usatoday.com##div.poster-scroll
