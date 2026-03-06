@@ -4,9 +4,6 @@
 ! Version: November 23 2025
 ! Expires: 2 days
 
-!Make your links grey instead of blue (optional)
-!com,dev,io,net,org,gov,app,social,gist,tv,video,ai,me,blog,tech##a:style(color: grey!important)
-
 ! Apr 18, 2025 Bluesky  (https://bsky.app)
 !trending topics
 bsky.app##div[style$='"Segoe UI Emoji"; font-variant: no-contextual;']:has-text(/Trending/):upward(div[style$="4px;"]):upward(1)
