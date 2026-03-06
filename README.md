@@ -16,6 +16,15 @@ uBlock Origin filter removing news websites features to keep you reading, includ
 
 For now, this list will only work well on uBlock Origin ! I tried on Brave and unfortunately it does some thungs differenly, notably with has-text.
 
+Websites that work (non-exhaustive)
+
+- https://www.wsj.com
+- https://www.nytimes.com
+- https://www.washingtonpost.com/
+- https://www.ft.com
+- and many more..
+
+
 
 ### Notes & contributions
 
