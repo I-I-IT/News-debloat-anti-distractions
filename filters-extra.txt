@@ -16,3 +16,6 @@ stackoverflow.com,askubuntu.com,stackexchange.com##div[class="module sidebar-rel
 ! 17 Jun 2025 https://worldbuilding.stackexchange.com
 stackexchange.com,stackoverflow.com##:matches-path(/questions/)ul[class~=s-sidebarwidget--content]
 stackexchange.com,stackoverflow.com###inline_related_var_a_less
+
+!Make your links grey instead of blue (optional)
+!com,dev,io,net,org,gov,app,social,gist,tv,video,ai,me,blog,tech##a:style(color: grey!important)
