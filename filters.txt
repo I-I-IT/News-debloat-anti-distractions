@@ -157,6 +157,10 @@ www.wsj.com##a[href="https://www.wsj.com/buyside/?mod=wsj_article_buy_widget"]:u
 www.wsj.com##div[aria-label="Most Popular Opinion"][role="complementary"]
 www.wsj.com##h4:has-text(/SHARE YOUR THOUGHTS/m):upward(div[data-inset_type="richtext"])
 wsj.com##a:style(border-bottom: 0px!important)
+! 6 Mar 2026 https://www.wsj.com
+www.wsj.com##video:style(width:50% !important;height:50% !important;)
+!Try reducing video size (doesn't really work)
+!www.wsj.com##div[data-type="video"]>figure
 
 
 
@@ -728,3 +732,17 @@ www.theatlantic.com##div[class^="ArticleFooterRecirc_root"]
 
 ! 22 Feb 2026 https://www.cnbc.com
 www.cnbc.com##div[class="SidebarArticle-sidebar PageBuilder-sidebar"]:matches-path(/\d{4}/)
+
+
+
+
+! 6 Mar 2026 https://www.axios.com
+www.axios.com##div[data-vars-event-name="promo_view"]>a>img[src*=".gif"]:matches-path(/)
+www.axios.com##div[class=""]:has(h5:has-text(/What to read next/))
+
+
+! 5 Mar 2026 https://www.washingtonexaminer.com
+www.washingtonexaminer.com##div[class="wpb_wrapper"]:has(div[class^="wpb_wrapper td_block_wrap vc_widget_sidebar"]):matches-path(/news)
+www.washingtonexaminer.com##.recommended-stories:matches-path(/news)
+www.washingtonexaminer.com##p:has(a:has(strong:has-text(/[A-Z][\S]/)))
+
