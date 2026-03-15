@@ -407,6 +407,8 @@ www.politico.com##.hide-under-small.right-zone.center-vertically.container__colu
 www.politico.com##aside[class="story-enhancement"][id="aside-1"]
 www.politico.com##div[class="container__column container__column--story hide-under-small"]:style(display: none !important)
 www.politico.com##div[class="container__column container__column--story center-vertically right-zone hide-under-small"]:style(display: none !important)
+www.politico.com##div[class="content-center hidden md:col-start-2 md:col-end-2 md:row-start-1 md:row-end-5 md:block lg:col-start-3 lg:col-end-3 lg:row-start-1 lg:row-end-3"]:matches-path(/news/)
+
 
 ! May 7-18, 2025 Politico EU (https://www.politico.eu)
 www.politico.eu##span[class^="content-header"]:has-text(/Our readers read next/):upward(h2):upward(div):upward(div)
@@ -645,8 +647,11 @@ www.tomsguide.com##div[data-recirc-id="article-river-stacked-solr:latest-article
 www.euractiv.com##:matches-path("/section/") h2:has-text(/Most recent/m):upward(div)
 !Most recent also on homescreen, so matches-path is justified
 ! 22 Feb 2026 https://www.euractiv.com
-www.euractiv.com##div[class~="c-wrapper__sidebar"] :matches-path(/news)
+www.euractiv.com##div[class~="c-wrapper__sidebar"]:matches-path(/news)
 www.euractiv.com##div[class^="c-wrapper mt-4"]:has(section[class="c-news-wrapper"])
+! 15 Mar 2026 https://www.euractiv.com
+www.euractiv.com##div[class="c-news-link c-news-link--text relative"]
+
 
 
 ! Yale Daily News, June 28 2025
