@@ -1,7 +1,7 @@
 ! Title: 📰 🗞️ News debloater 🧼
 ! Homepage: https://github.com/I-I-IT/News-debloat-anti-distractions/
 ! Description: uBlock Origin filter removing news websites features to keep you reading, including "Trending Topics", "top stories", etc.
-! Version: November 23 2025
+! Version: 19 March 2026
 ! Expires: 2 days
 
 ! Apr 18, 2025 Bluesky  (https://bsky.app)
@@ -221,6 +221,8 @@ townhall.com##.thm-headroom--pinned.thm-headroom.tns-outer
 www.france24.com##.t-content__below-sidebar.o-aside-content--top-articles.o-aside-content
 www.france24.com##.t-content__below-sidebar.o-aside-content--carousel.o-aside-content
 www.france24.com##.o-sidebar__aside
+
+
 
 ! Apr 18-29, 2025 CBC Canada (https://www.cbc.ca)
 www.cbc.ca##.sclt-morenews.moreStories
@@ -543,12 +545,14 @@ www.thedailybeast.com##div[class="trending-now"]
 ! May 13, 2025 Raw Story https://www.rawstory.com
 www.rawstory.com##div[class^="column-right sidebar-column"]:has(img)
 
-! May 13,14,18 2025  The Hill (https://thehill.com)
+! The Hill (https://thehill.com)
 thehill.com##section[class^="most-popular-widget hill-article-list"]
 thehill.com##section[class^="just-in hill-article-list"]
 thehill.com##.extended-scroll__more-news:has-text(/News/)
 thehill.com##div[class="extended-scroll__video-hilltv"]
 thehill.com##.extended-scroll__top-stories
+thehill.com##section[class="extended-scroll"]
+thehill.com##div[data-civicscience-widget]:matches-path(/\w+/)
 
 ! May 15, 2025 The Moscow Times (https://www.themoscowtimes.com)
 www.themoscowtimes.com##.sidebar__sticky:has-text(/Most read/):has-text(/Just in/)
@@ -752,4 +756,13 @@ www.axios.com##div[class=""]:has(h5:has-text(/What to read next/))
 www.washingtonexaminer.com##div[class="wpb_wrapper"]:has(div[class^="wpb_wrapper td_block_wrap vc_widget_sidebar"]):matches-path(/news)
 www.washingtonexaminer.com##.recommended-stories:matches-path(/news)
 www.washingtonexaminer.com##p:has(a:has(strong:has-text(/[A-Z][\S]/)))
+
+
+! 19 Mar 2026 https://www.foxnews.com
+www.foxnews.com##.isSticky.recommended-navbar
+www.foxnews.com##div[class="sidebar sidebar-article sidebar-primary desktop"]:matches-path(/\w/)
+www.foxnews.com##a:has(strong):matches-path(/\w+/)
+www.foxnews.com##div[class="video-container"]:matches-path(/\w+/):style(padding-bottom: 40% !important;)
+!Reduce video size
+www.foxnews.com##.article-body:style(width: 95% !important;)
 
