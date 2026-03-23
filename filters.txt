@@ -285,6 +285,12 @@ www.euronews.com##.c-tags-list--grey-rendering
 www.euronews.com##.c-footer-search__tag-title
 www.euronews.com##.js-breaking-news.helper-site-row.c-breaking-news
 
+! 23 Mar 2026 
+www.euronews.com##div[data-video]:style(max-width:75% !important;)
+www.euronews.com##aside[class="o-article-newsy__aside"]
+www.euronews.com##div[id="adb-article-you-might-also-like"]
+
+
 ! Apr 19, 2025 Newsweek (https://www.newsweek.com)
 www.newsweek.com##aside
 www.newsweek.com##.disco-widget
@@ -765,4 +771,10 @@ www.foxnews.com##a:has(strong):matches-path(/\w+/)
 www.foxnews.com##div[class="video-container"]:matches-path(/\w+/):style(padding-bottom: 40% !important;)
 !Reduce video size
 www.foxnews.com##.article-body:style(width: 95% !important;)
+
+
+www.brusselstimes.com##.article-latest-articles
+www.brusselstimes.com##.left-sidebar:matches-path(/\w+/)
+www.brusselstimes.com##h3[class="crp-list-title"]+ul
+www.brusselstimes.com##h3[class="crp-list-title"]
 
