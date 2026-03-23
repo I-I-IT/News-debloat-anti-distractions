@@ -1,7 +1,7 @@
 ! Title: 📰 🗞️ News debloater 🧼
 ! Homepage: https://github.com/I-I-IT/News-debloat-anti-distractions/
 ! Description: uBlock Origin filter removing news websites features to keep you reading, including "Trending Topics", "top stories", etc.
-! Version: 19 March 2026
+! Version: 23 March 2026
 ! Expires: 2 days
 
 ! Apr 18, 2025 Bluesky  (https://bsky.app)
@@ -158,6 +158,10 @@ wsj.com##a:style(border-bottom: 0px!important)
 www.wsj.com##video:style(width:50% !important;height:50% !important;)
 !Try reducing video size (doesn't really work)
 !www.wsj.com##div[data-type="video"]>figure
+||wsj.com^$image,header=content-type:image/webp,domain=wsj.net
+!Removes webp image on the site. Those are used to display animated images ("GIFS") on the homepage. wsj.com images are excluded, as for now they do not use animated images.
+www.wsj.com##hr[aria-hidden="true"]:upward(div):has-text(Real Estate Insights)
+
 
 
 
@@ -188,6 +192,8 @@ www.voanews.com##.col-md-8:style(width: 95%)
 www.voanews.com##.col-md-3:style(width:1%;)
 www.voanews.com##.design-top-offset.pull-left.col-lg-4.col-md-4.col-sm-12.col-xs-12 > .media-block-wrap:has-text(/Related/)
 www.voanews.com###wrowblock-27868_21:has-text(/Latest stories/)
+www.voanews.com##.media-block-wrap
+
 
 !Apr 18, 2025 Poynter (media watchdog) https://www.poynter.org
 www.poynter.org##.poynter-post-content >ul
@@ -527,6 +533,8 @@ www.maketecheasier.com##h3[class~="gb-text"]:has-text(/Read next/):upward(div)
 
 ! May 8, 2025 CNN web articles (https://edition.cnn.com)
 edition.cnn.com##div[class="content-recs"]:has-text(/More from CNN/)
+edition.cnn.com##.container_list-headlines-with-images__field-links.container__field-links
+
 
 ! May 10, 2025 Chicago Times (https://chicago.suntimes.com)
 chicago.suntimes.com##div.Enhancement.RelatedList
@@ -777,4 +785,6 @@ www.brusselstimes.com##.article-latest-articles
 www.brusselstimes.com##.left-sidebar:matches-path(/\w+/)
 www.brusselstimes.com##h3[class="crp-list-title"]+ul
 www.brusselstimes.com##h3[class="crp-list-title"]
+
+www.ign.com##div[class$="ign-recommends"]:upward(2)
 
