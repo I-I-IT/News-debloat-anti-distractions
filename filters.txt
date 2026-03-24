@@ -698,6 +698,17 @@ www.zdnet.com##div[class="c-seamlessTriggers"]+div[class="c-scrollPercent"]
 www.zdnet.com##strong:has-text(/^Also:/i):upward(p)
 www.zdnet.com##p:has(a[href^="https://www.zdnet.com/newsletters/"]):has(em)
 
+!Fix Zdnet bugs and better display:
+! 24 Mar 2026
+www.zdnet.com##.lg\:u-col-6.md\:u-col-6.sm\:u-col-2.c-pageArticleSingle_body:style(--grid-cols: 1 !important;)
+www.zdnet.com##div[class="u-grid-columns c-pageArticleSingle_grid g-outer-spacing-bottom-large"]:style(display: contents !important;)
+||bender.prod.cnet.tech/api/neutron/seamless/*
+!Block infinite scrolling (didn't work per se, but it when to other article when refreshing page)
+www.zdnet.com##div[class="u-grid-columns c-pageArticleSingle_grid c-pageArticleSingle_topContent"]:style(display:contents !important;)
+!Make it pretty
+www.zdnet.com##p:style(text-align: justify)
+www.zdnet.com##h1:style(text-align: justify;)
+
 !Bleeping computer
 www.bleepingcomputer.com##:matches-path(/news) div[id=pop_stories]
 !This matches-path important to keep, as it is used for the Popular Stories on the homepage.
@@ -787,4 +798,7 @@ www.brusselstimes.com##h3[class="crp-list-title"]+ul
 www.brusselstimes.com##h3[class="crp-list-title"]
 
 www.ign.com##div[class$="ign-recommends"]:upward(2)
+
+
+
 
