@@ -24,6 +24,10 @@ Websites that work (non-exhaustive)
 - https://www.ft.com
 - and many more..
 
+*Ignore the white space, this is Github formating
+|**Before**|**After***|
+|---|---|
+|![ZDNET without the filter](zdnet_without_anti_debloat_2.png)|![ZDNEt with the filter list](zdnet_with_anti_bloat_updated.png)|
 
 
 ### Notes & contributions
