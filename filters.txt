@@ -799,6 +799,7 @@ www.brusselstimes.com##h3[class="crp-list-title"]
 
 www.ign.com##div[class$="ign-recommends"]:upward(2)
 
+www.cbsnews.com##.component.list.recirculation.component--type-recirculation
 
 
 
